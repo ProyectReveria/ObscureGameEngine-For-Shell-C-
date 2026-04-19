@@ -49,7 +49,7 @@ public static class GameManager
                 if (Respuesta == "1")
                 {
                     Game_Active = true;
-                    System.Console.Clear();
+                    Console.Clear();
                 }
                 else if (Respuesta == "2")
                 {
