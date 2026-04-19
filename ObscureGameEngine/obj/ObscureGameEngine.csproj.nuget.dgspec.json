@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\Uriel\\OneDrive\\Documentos\\GitHub\\ObscureGameEngine-For-Shell-C-\\ObscureGameEngine\\ObscureGameEngine.csproj": {}
+    "C:\\Users\\Uriel\\OneDrive\\Documentos\\GitHub\\ObscureGameEngine-For-Shell-C-\\ObscureGameEngine\\ObscureGameEngine.csproj": {}
   },
   "projects": {
-    "c:\\Users\\Uriel\\OneDrive\\Documentos\\GitHub\\ObscureGameEngine-For-Shell-C-\\ObscureGameEngine\\ObscureGameEngine.csproj": {
+    "C:\\Users\\Uriel\\OneDrive\\Documentos\\GitHub\\ObscureGameEngine-For-Shell-C-\\ObscureGameEngine\\ObscureGameEngine.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Uriel\\OneDrive\\Documentos\\GitHub\\ObscureGameEngine-For-Shell-C-\\ObscureGameEngine\\ObscureGameEngine.csproj",
+        "projectUniqueName": "C:\\Users\\Uriel\\OneDrive\\Documentos\\GitHub\\ObscureGameEngine-For-Shell-C-\\ObscureGameEngine\\ObscureGameEngine.csproj",
         "projectName": "ObscureGameEngine",
-        "projectPath": "c:\\Users\\Uriel\\OneDrive\\Documentos\\GitHub\\ObscureGameEngine-For-Shell-C-\\ObscureGameEngine\\ObscureGameEngine.csproj",
+        "projectPath": "C:\\Users\\Uriel\\OneDrive\\Documentos\\GitHub\\ObscureGameEngine-For-Shell-C-\\ObscureGameEngine\\ObscureGameEngine.csproj",
         "packagesPath": "C:\\Users\\Uriel\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Uriel\\OneDrive\\Documentos\\GitHub\\ObscureGameEngine-For-Shell-C-\\ObscureGameEngine\\obj\\",
+        "outputPath": "C:\\Users\\Uriel\\OneDrive\\Documentos\\GitHub\\ObscureGameEngine-For-Shell-C-\\ObscureGameEngine\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -2,15 +2,18 @@
 using Game_engine_Obscure.InputManager;
 using Game_engine_Obscure.InputManager.IA;
 using Game_engine_Obscure.Mathematics;
+using Game_engine_Obscure.DeltaTime;
+using Game_engine_Obscure.Hitbox;
 using System;
 using System.Numerics;
+using Game_engine_Obscure.Game_user_Interface_Library;
 
 
 namespace Game_engine_Obscure.InputManager.IA;
 
 internal class Enemy_IA : ControlMangaer
 {
-    public static int _IA_Position_X = Math_Alogirth.RNG.Next(0, ScreenCite.Map_Limitx - 1), _IA_Position_Y = Math_Alogirth.RNG.Next(0, ScreenCite.Map_Limity - 1);
+    public static int _IA_Position_X = Math_Alogirth.RNG.Next(0, Screen_Render_Sceen_Hitbox.Map_Limitx - 1), _IA_Position_Y = Math_Alogirth.RNG.Next(0, Screen_Render_Sceen_Hitbox.Map_Limity - 1);
     public static float _IA_FloatPostion_X, _IA_FloatPostion_Y;
     public static int _IA_Position_X_old, _IA_Position_Y_old;
 
@@ -57,7 +60,7 @@ class _IA_LogicalDetector : Enemy_IA
         return _IA_DesplazamientoV2;
     }
 
-    public static float Player_Lock(float Player_Aritmetic_Cardenal_X, float Player_Aritmetic_Cardenals_Y, float V_range) //En realidad esto es la distancia pero ahora me da peresa cambiar el nombre de cada metodo
+    public static float Player_Distance(float Player_Aritmetic_Cardenal_X, float Player_Aritmetic_Cardenals_Y, float V_range) //En realidad esto es la distancia pero ahora me da peresa cambiar el nombre de cada metodo
     {
         UpdateFloat_IA_();
         _Logical_Cardenal_Update();
@@ -79,17 +82,31 @@ class IA_Logical_Controler : Enemy_IA
 {
     public static void Enemy_IA_Controler()
     {
+        float _Delta_Run_Time = oscilador_SENO(_DeltaTime_._RunDeltaTime_, GameBeheivorData.GameEngine_Speed);
         _IA_Position_X_old = _IA_Position_X;
         _IA_Position_Y_old = _IA_Position_Y;
 
         Vector2 Playervector = _IA_LogicalDetector.Player_Lock_DesplasamientoVector2(ControlMangaer.PxF, ControlMangaer.PyF);
         Vector2 IAVector = _IA_LogicalDetector._IA_Cardinal_Desplasamiento(_IA_FloatPostion_X, _IA_FloatPostion_Y);
+        float Delta_X = Get_Delta_X(Playervector.X,IAVector.X); 
+        float Delta_Y = Get_Delta_Y(Playervector.Y, IAVector.Y);
 
-
-
-
-
-
+        Vector2 DistanceVector = Get_Delata_Vector2(Delta_X,Delta_Y); 
+        
+        if (_IA_FloatPostion_X < Px)
+        {
+            _IA_Position_X +=  1 * GameBeheivorData.GameEngine_Speed;
+        } else if (_IA_FloatPostion_X > Px)
+        {
+            _IA_Position_X -=1 * GameBeheivorData.GameEngine_Speed; 
+        }else if (_IA_Position_Y < Py)
+        {
+            _IA_Position_Y +=1 * GameBeheivorData.GameEngine_Speed; 
+        }else if (_IA_Position_Y > Py)
+        {
+            _IA_Position_Y -=1 * GameBeheivorData.GameEngine_Speed; 
+        }
+        
 
         if (_IA_Position_X == ControlMangaer.Px && _IA_Position_Y == ControlMangaer.Py)
         {
@@ -97,7 +114,7 @@ class IA_Logical_Controler : Enemy_IA
             GameManager.Game_oveer = true;
             Console.SetCursorPosition(_IA_Position_Y, _IA_Position_X);
             Console.Write(" ");
-            GameManager.Game_Over_UI();
+            GUI.Game_Over_UI();
 
         }
 

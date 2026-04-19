@@ -1,0 +1,15 @@
+Bienvenido a la documentacion de Obscure.
+
+por como funciona el programa hay una cosa es importante tomes en cuenta antes de empezar a usar el engine.
+Este esta pensado en un sistema x64 y ARMx64 por igual. esto se debe a la versatilidad de c#, aunque tarde mas en cargar dentro del SDK de C# 
+Gracias a esto hay una limitacion tecnica importante, ocupas usar el Launcher .Core de .NET, lo que implica limitaciones de CS 3.5.2 hacia atras.
+
+
+Debido a esto la unica forma de hacer Debug en Obscure es a traves de ".Net Core Launch (console)" con la terminal por defecto, esto tiene sus ventajas:
+
+1: El espacio es virtualmente infinito debido a que renderiza los caracteres como quiere
+2: Es mucho mas ligero que otros sistemas
+3: Requiere tener conciencia de que pasa
+4: No requiere optmiziacioens mayores
+
+Ahora bien si por A o por B se ocupa este mismo codigo deberia poder compilar en C++ usando un Lexer intermediario C# C++ similar al que usa Unity 6.0.36 LTS

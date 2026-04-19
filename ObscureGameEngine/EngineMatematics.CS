@@ -22,6 +22,8 @@ namespace Game_engine_Obscure.Mathematics
             Vector2 Delta_Vector = new Vector2(Delta_Y, Delta_X);
             return Delta_Vector;
         }
+
+        public static Func<float,float,float> oscilador_SENO = (tiempo, velocidad) => (float) Math.Sin(tiempo * velocidad);
     }
 }
 

@@ -3,18 +3,23 @@ using Game_engine_Obscure.DeltaTime;
 using Game_engine_Obscure.Mathematics;
 using Game_engine_Obscure.InputManager;
 using Game_engine_Obscure.InputManager.IA;
+using Game_engine_Obscure.Game_user_Interface_Library;
+using Game_engine_Obscure.Hitbox;
+using System.Runtime.Versioning;
+
 
 
 namespace Game_engine_Obscure;
 
-class ScreenCite : Math_Alogirth
+
+
+class Screen_Render_Sceen_Hitbox : Math_Alogirth
 {
 
     public const int Map_Limitx = 16, Map_Limity = 16;
-    public static int StarterPointAx = 16, StarterPointAy = 16;
-    public static int StarterPointBx = 16, StarterPointBy = 16;
-    public static int _HitBox_PlayerLimit_on_X = Map_Limitx - 1, _HitBox_PlayerLimit_On_Y = Map_Limity - 1;
-
+    public static int StarterPointAx = 16, StarterPointAy = 16; //For the cube
+    public static int StarterPointBx = 16, StarterPointBy = 16;//for the cube
+    public static int _HitBox_PlayerLimit_on_X = Map_Limitx  , _HitBox_PlayerLimit_On_Y = Map_Limity;
 
 }
 
@@ -23,8 +28,11 @@ public static class GameBeheivorData
     public static bool Sincron = true;
     public static bool Asincron = false;
 
+    public const int GameEngine_Speed = 1; 
     public static float _IA_ROV = 7.0f;
     public static float _Ia_speed = 1.0f;
+    
+    public static  int Points = 0;
 }
 
 
@@ -35,62 +43,21 @@ public static class GameManager
     public static bool Game_Active = false;
     public static bool Game_oveer = false;
 
-
-
-    public static void Game_UI()
-    {
-        {
-            {
-                Console.WriteLine("Bienvenido, Esto es un prototipo tecnico (actualmente de  deteccion) hice de forma simple");
-                Console.WriteLine("Para iniciar Precione 1, para salir precione 2. Cualquier otra cosa efectuara la segunda opcion");
-                Console.WriteLine("Una ves pierdas la partida se da la puntuacion y debe reiniciar el programa");
-                string? Respuesta = Console.ReadLine();
-
-                if (Respuesta == "1")
-                {
-                    Game_Active = true;
-                    Console.Clear();
-                }
-                else if (Respuesta == "2")
-                {
-                    Console.WriteLine("Programa Detenido, para iniciar Reinicie");
-                }
-                else
-                {
-                    Console.WriteLine("no es un opcion valida");
-                    GameManager.Game_UI();
-                }
-            }
-        }
-    }
-
-
-    public static void Game_Over_UI()
-    {
-
-        if (GameManager.Game_oveer == true)
-        {
-            Console.Clear();
-            Console.WriteLine("Game over");
-            Console.WriteLine($"Puntuacion {ControlMangaer.Points}");
-            Console.WriteLine("Close System");
-        }
-    }
-
 }
 
 
 
 
 
-
-class Game : ScreenCite
+[SupportedOSPlatform("Windows")]
+class Game : Screen_Render_Sceen_Hitbox
 {
     public static void Main(string[] args)
     {
-        GameManager.Game_UI();
+        
+        GUI.Game_UI();
 
-
+        
         if (GameManager.Game_Active == true)
         {
             for (int A = 0; A < StarterPointAx + 1; A++)
@@ -106,7 +73,7 @@ class Game : ScreenCite
 
             for (int B = 0; B < StarterPointBx + 1; B++)
             {
-                Console.SetCursorPosition(ScreenCite.StarterPointAx, B);
+                Console.SetCursorPosition(Screen_Render_Sceen_Hitbox.StarterPointAx, B);
                 Console.Write("x");
             }
             for (int B2 = 0; B2 < StarterPointBy + 1; B2++)
@@ -121,17 +88,20 @@ class Game : ScreenCite
         while (GameManager.Game_Active == true)
         {
             Console.SetCursorPosition(0, 17);
-            Console.Write($"IA positon {Enemy_IA._IA_Position_X},{Enemy_IA._IA_Position_Y}");
+            Console.Write($"plyaer {InputManager.ControlMangaer.Px},{InputManager.ControlMangaer.Py}");
             Console.SetCursorPosition(0, 18);
-            Console.WriteLine($"Actual distance {_IA_LogicalDetector.Player_Lock(ControlMangaer.PxF, ControlMangaer.PyF, GameBeheivorData._IA_ROV)}");
+            
 
             ControlMangaer.Control();
+            _Hitbox_._Hitbox_Check(ref InputManager.ControlMangaer.Px,ref InputManager.ControlMangaer.Py);
             Console.SetCursorPosition(ControlMangaer.Px_old, ControlMangaer.Py_old);
             Console.Write(" ");
             Console.SetCursorPosition(ControlMangaer.Px, ControlMangaer.Py);
             Console.Write("0"); //Player
             Console.SetCursorPosition(Enemy_IA._IA_Position_X_old, Enemy_IA._IA_Position_Y_old);
             Console.Write(" ");
+            IA_Logical_Controler.Enemy_IA_Controler();
+            _Hitbox_._Hitbox_Check(ref Enemy_IA._IA_Position_X,ref Enemy_IA._IA_Position_Y);
             Console.SetCursorPosition(Enemy_IA._IA_Position_X, Enemy_IA._IA_Position_Y);
             Console.Write("2"); //Enemy
             Console.SetCursorPosition(0, 17);

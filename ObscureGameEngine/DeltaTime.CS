@@ -5,8 +5,10 @@ using System.Diagnostics;
 
 namespace Game_engine_Obscure.DeltaTime;
 
-internal class DeltaTime : Math_Alogirth
+internal class _DeltaTime_ : Math_Alogirth
 {
+
+    public static float _RunDeltaTime_ {get; private set;}
 
     static void Update_Deltatime(double DeltaTime)
     {

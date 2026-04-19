@@ -9,7 +9,7 @@
             "program": "${workspaceFolder}/ObscureGameEngine/bin/Debug/net8.0/ObscureGameEngine.dll",
             "args": [],
             "cwd": "${workspaceFolder}/ObscureGameEngine",
-            "console": "integratedTerminal",
+            "console": "externalTerminal",
             "stopAtEntry": false
         }
     ]

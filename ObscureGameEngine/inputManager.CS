@@ -1,12 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Game_engine_Obscure.Hitbox;
+
 
 namespace Game_engine_Obscure.InputManager
 {
-    class ControlMangaer : ScreenCite
+    class ControlMangaer : Screen_Render_Sceen_Hitbox
     {
         public static int Px = 8, Py = 8;
         public static int Px_old, Py_old;
@@ -52,27 +50,7 @@ namespace Game_engine_Obscure.InputManager
                 case controlManager.right: Px--; break;
             }
 
-            if (Px == ControlMangaer.Map_Limitx)
-            {
-                Px = _HitBox_PlayerLimit_on_X;
-            }
-
-            if (Py == ControlMangaer.Map_Limity)
-            {
-                Py = _HitBox_PlayerLimit_On_Y;
-            }
-
-
-
-            if (Px < 1)
-            {
-                Px = 1;
-            }
-
-            if (Py < 1)
-            {
-                Py = 1;
-            }
+            
 
         }
     }
