@@ -14,7 +14,7 @@ internal class DeltaTime : Math_Alogirth
         double Delta_Time_movement = Delta_Time_Speed * DeltaTime;
     }
 
-    public static void Main()
+    public static void RunDeltaTime()
     {
         Stopwatch Delta_Watch = new Stopwatch();
         Delta_Watch.Start();
@@ -24,7 +24,7 @@ internal class DeltaTime : Math_Alogirth
         while (true)
         {
             double Corrunt_frame = Delta_Watch.Elapsed.TotalSeconds;
-            double deltatime = Start_frame - Corrunt_frame;
+            double deltatime = Corrunt_frame - Start_frame;
 
             Update_Deltatime(deltatime);
         }

@@ -1,0 +1,15 @@
+c:\Users\Uriel\OneDrive\Documentos\GitHub\ObscureGameEngine-For-Shell-C-\ObscureGameEngine\obj\Debug\net8.0\ObscureGameEngine.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\Uriel\OneDrive\Documentos\GitHub\ObscureGameEngine-For-Shell-C-\ObscureGameEngine\obj\Debug\net8.0\ObscureGameEngine.AssemblyInfoInputs.cache
+c:\Users\Uriel\OneDrive\Documentos\GitHub\ObscureGameEngine-For-Shell-C-\ObscureGameEngine\obj\Debug\net8.0\ObscureGameEngine.AssemblyInfo.cs
+c:\Users\Uriel\OneDrive\Documentos\GitHub\ObscureGameEngine-For-Shell-C-\ObscureGameEngine\obj\Debug\net8.0\ObscureGameEngine.csproj.CoreCompileInputs.cache
+c:\Users\Uriel\OneDrive\Documentos\GitHub\ObscureGameEngine-For-Shell-C-\ObscureGameEngine\obj\Debug\net8.0\ObscureGameEngine.sourcelink.json
+c:\Users\Uriel\OneDrive\Documentos\GitHub\ObscureGameEngine-For-Shell-C-\ObscureGameEngine\bin\Debug\net8.0\ObscureGameEngine.exe
+c:\Users\Uriel\OneDrive\Documentos\GitHub\ObscureGameEngine-For-Shell-C-\ObscureGameEngine\bin\Debug\net8.0\ObscureGameEngine.deps.json
+c:\Users\Uriel\OneDrive\Documentos\GitHub\ObscureGameEngine-For-Shell-C-\ObscureGameEngine\bin\Debug\net8.0\ObscureGameEngine.runtimeconfig.json
+c:\Users\Uriel\OneDrive\Documentos\GitHub\ObscureGameEngine-For-Shell-C-\ObscureGameEngine\bin\Debug\net8.0\ObscureGameEngine.dll
+c:\Users\Uriel\OneDrive\Documentos\GitHub\ObscureGameEngine-For-Shell-C-\ObscureGameEngine\bin\Debug\net8.0\ObscureGameEngine.pdb
+c:\Users\Uriel\OneDrive\Documentos\GitHub\ObscureGameEngine-For-Shell-C-\ObscureGameEngine\obj\Debug\net8.0\ObscureGameEngine.dll
+c:\Users\Uriel\OneDrive\Documentos\GitHub\ObscureGameEngine-For-Shell-C-\ObscureGameEngine\obj\Debug\net8.0\refint\ObscureGameEngine.dll
+c:\Users\Uriel\OneDrive\Documentos\GitHub\ObscureGameEngine-For-Shell-C-\ObscureGameEngine\obj\Debug\net8.0\ObscureGameEngine.pdb
+c:\Users\Uriel\OneDrive\Documentos\GitHub\ObscureGameEngine-For-Shell-C-\ObscureGameEngine\obj\Debug\net8.0\ObscureGameEngine.genruntimeconfig.cache
+c:\Users\Uriel\OneDrive\Documentos\GitHub\ObscureGameEngine-For-Shell-C-\ObscureGameEngine\obj\Debug\net8.0\ref\ObscureGameEngine.dll

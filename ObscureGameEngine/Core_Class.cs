@@ -49,7 +49,7 @@ public static class GameManager
                 if (Respuesta == "1")
                 {
                     Game_Active = true;
-                    Console.Clear();
+                    System.Console.Clear();
                 }
                 else if (Respuesta == "2")
                 {
@@ -86,7 +86,7 @@ public static class GameManager
 
 class Game : ScreenCite
 {
-    public static void Main()
+    public static void Main(string[] args)
     {
         GameManager.Game_UI();
 
@@ -141,14 +141,6 @@ class Game : ScreenCite
         }
     }
 
-}
-
-class A
-{
-    public static void AA(String[] args)
-    {
-        Console.WriteLine("A");
-    }
 }
 
 
