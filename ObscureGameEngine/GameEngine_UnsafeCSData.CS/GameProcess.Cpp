@@ -20,7 +20,9 @@ namespace Cnet {
     };
 }
 
-int DeltaTime(){
+class _Cnet_DeltaTime {
+    public: 
+    void _Cnet_ActiveDeltaTime(){
     auto timer_Previous = std::chrono::steady_clock::now(); 
     float DeltaTime_Cnet = 0.0f; 
 
@@ -32,6 +34,8 @@ int DeltaTime(){
 
         timer_Previous = Timer_Concurrenci; 
 
-        float Engine_Speed = 100.f;
-    }
+        float Engine_Speed = GlobalEngineSpeed;
+    } 
 }
+};
+

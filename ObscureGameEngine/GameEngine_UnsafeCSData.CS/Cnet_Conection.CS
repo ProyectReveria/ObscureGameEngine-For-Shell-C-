@@ -1,11 +1,12 @@
 using System;
 using System.Runtime.InteropServices;
+using Game_engine_Obscure.DeltaTime; 
 using Game_engine_Obscure.Game_Manager;
 using Game_engine_Obscure.CNect_UnsafeStack; 
 
 namespace Game_engine_Obscure.CNect_UnsafeStack.Library; 
 
-class Cnet_Conector
+class Cnet_Conector  
 {
 
     public unsafe class GameProcess
@@ -25,4 +26,24 @@ class Cnet_Conector
         }
 
     }
+
+    public unsafe class GameProcess_MapSize
+    {
+        private const string Library_Name = "ObscureGameEngine_TileSize.dll";
+        [DllImport(Library_Name, CallingConvention = CallingConvention.Cdecl)]
+
+        public static extern void Size(int* size); 
+
+        public void Cnet_TileUpdate()
+        {
+            int _Size = 0; 
+
+            unsafe
+            {
+                Size(&_Size); 
+            }
+        }
+    }
+
+
 }
