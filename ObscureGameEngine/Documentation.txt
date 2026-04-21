@@ -13,3 +13,5 @@ Debido a esto la unica forma de hacer Debug en Obscure es a traves de ".Net Core
 4: No requiere optmiziacioens mayores
 
 Ahora bien si por A o por B se ocupa este mismo codigo deberia poder compilar en C++ usando un Lexer intermediario C# C++ similar al que usa Unity 6.0.36 LTS
+
+Tambien recordar cambiar en el Launch.json de la terminal de "ExternalTerminal" a "integratedTerminal"

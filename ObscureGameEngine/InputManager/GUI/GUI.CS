@@ -2,6 +2,7 @@ using System;
 using Game_engine_Obscure; 
 using Game_engine_Obscure.InputManager;
 using Game_engine_Obscure.Mathematics;
+using Game_engine_Obscure.Game_Manager; 
 
 
 namespace Game_engine_Obscure.Game_user_Interface_Library;
@@ -20,7 +21,7 @@ internal class GUI
 
                 if (Respuesta == "1")
                 {
-                    GameManager. Game_Active = true;
+                    GameManager_OperativeBehavior.Game_Active = true;
                     Console.Clear();
                 }
                 else if (Respuesta == "2")
@@ -38,7 +39,7 @@ internal class GUI
        public static void Game_Over_UI()
     {
 
-        if (GameManager.Game_oveer == true)
+        if (GameManager_OperativeBehavior.Game_oveer == true)
         {
             Console.Clear();
             Console.WriteLine("Game over");
