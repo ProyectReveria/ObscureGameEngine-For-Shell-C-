@@ -9,14 +9,14 @@ public class _Hitbox_
 {
     public static void _Hitbox_Check(ref int x, ref int y)
     {
-        if (x >= ControlMangaer.Map_Limitx)
+        if (x >= Game_engine_Obscure.CNect_UnsafeStack.ScreenRednerPipeline.Screen_Render_Sceen_Hitbox.Map_Limitx)
         {
-            x = Screen_Render_Sceen_Hitbox._HitBox_PlayerLimit_on_X - 1;
+            x = Game_engine_Obscure.CNect_UnsafeStack.ScreenRednerPipeline.Screen_Render_Sceen_Hitbox._HitBox_PlayerLimit_on_X - 1;
         }
 
-        if (y >= ControlMangaer.Map_Limity )
+        if (y >= Game_engine_Obscure.CNect_UnsafeStack.ScreenRednerPipeline.Screen_Render_Sceen_Hitbox.Map_Limity )
         {
-            y = Screen_Render_Sceen_Hitbox._HitBox_PlayerLimit_On_Y - 1;
+            y = Game_engine_Obscure.CNect_UnsafeStack.ScreenRednerPipeline.Screen_Render_Sceen_Hitbox._HitBox_PlayerLimit_On_Y - 1;
         }
 
 
