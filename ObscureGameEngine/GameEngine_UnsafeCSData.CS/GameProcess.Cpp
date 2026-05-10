@@ -29,7 +29,7 @@ class _Cnet_DeltaTime {
     while (true){ 
         auto Timer_Concurrenci = std::chrono::steady_clock::now(); 
         
-        std::chrono::duration<float> elapse = timer_Previous - Timer_Concurrenci; 
+        std::chrono::duration<float> elapse =  Timer_Concurrenci - timer_Previous; 
         DeltaTime_Cnet = elapse.count(); 
 
         timer_Previous = Timer_Concurrenci; 
