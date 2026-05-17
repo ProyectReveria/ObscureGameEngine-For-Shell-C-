@@ -5,6 +5,40 @@
 #define EngineBitDefinition
 #define Configurations
 #define Engine_Nucleum
+#define Parcel_DAta_Code 
+
+#ifdef Parcel_DAta_Code
+
+//use this in other C++ file for create script gustom lenguajes, base of this can be make other ones using text scan and code inyection. 
+//if you using this be sure to use it well and take in cound is use one % of the C++ process power to only do this
+//if you have to use other lenguaje conect it using C++ not CS, CS have problems of conection
+
+
+enum class Token_API_DATA{
+    number, 
+    OPER, 
+    IDENTIFIER, 
+    KeyWORD, 
+    End_File, 
+}; 
+
+//struct for asaign gustom code
+struct Token_API_ASIGNATION{
+    Token_API_DATA Code_type; 
+    std::string Token_LenguajeName; 
+    int Line; 
+}; 
+
+struct Lenguaje_Parcel {
+    static bool Parcel_API = false; 
+    //<STATIC API ON READ ONLY>//
+    static bool CS_API = true; //<implement by Native>// 
+    static bool Cpp_API = true; //<implement by native>// 
+    static bool lua_API = false; //<not implement now>// 
+    //<STATIC API ON READ ONLY>// 
+};
+
+#endif 
 
 
 
