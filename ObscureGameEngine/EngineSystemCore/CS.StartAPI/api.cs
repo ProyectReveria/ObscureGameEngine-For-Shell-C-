@@ -10,7 +10,17 @@ class api{
  
     }
 
-    static void Active_API(){
-        
+    static void Active_API(bool statement){
+        if (statement == true){
+            Active_Gustom_APY = true;
+        } else {
+            Active_Gustom_APY = false; 
+        }
+    }
+
+    static bool Console(string command){
+        if (command == "./EnterGameConsole.GameEngineObscure"){
+            Console.
+        }
     }
 }
