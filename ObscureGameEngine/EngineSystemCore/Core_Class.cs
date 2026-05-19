@@ -7,6 +7,8 @@ using Game_engine_Obscure.Game_user_Interface_Library;
 using Game_engine_Obscure.Hitbox;
 using Game_engine_Obscure.Game_Manager;
 using System.Runtime.Versioning;
+using Game_engine_Obscure.Kernel; 
+using Game_engine_Obscure.API; 
 
 
 
@@ -35,7 +37,7 @@ class Game : Screen_Render_Sceen_Hitbox
 {
     public static void Main(string[] args)
     {
-        
+        api.API_MAIN(); 
         GUI.Game_UI();
         Game_FrameUpdate Start_Point = new Game_FrameUpdate(); 
 
