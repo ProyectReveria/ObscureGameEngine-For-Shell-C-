@@ -5,11 +5,15 @@ using System.Text;
 using System.Threading.Tasks;
 using Game_engine_Obscure.Hitbox;
 using Game_engine_Obscure.CNect_UnsafeStack.ScreenRednerPipeline;
+using Game_engine_Obscure.API; 
 
 namespace Game_engine_Obscure.InputManager
 {
+    
     class ControlMangaer : Screen_Render_Sceen_Hitbox
     {
+        public static string command = " "; 
+        private static bool activeconsole = false; 
         public static int Px = 8, Py = 8;
         public static int Px_old, Py_old;
         public static float PxF, PyF; // Cardinal Point on Flotate area (F(x) = Xf, Y; for vectors
@@ -25,6 +29,7 @@ namespace Game_engine_Obscure.InputManager
             down,
             left,
             right,
+            Dconsole, 
             none,
         }
 
@@ -44,6 +49,7 @@ namespace Game_engine_Obscure.InputManager
                 case ConsoleKey.S: direccional_Control = controlManager.down; Points++; break;
                 case ConsoleKey.D: direccional_Control = controlManager.left; Points++; break;
                 case ConsoleKey.A: direccional_Control = controlManager.right; Points++; break;
+                case ConsoleKey.k: direccional_Control = controlManager.Dconsole; break; 
             }
 
             switch (direccional_Control)
@@ -52,6 +58,7 @@ namespace Game_engine_Obscure.InputManager
                 case controlManager.down: Py++; break;
                 case controlManager.left: Px++; break;
                 case controlManager.right: Px--; break;
+                case controlManager.Dconsole: activeconsole = true; 
             }
 
             if (Px == ControlMangaer.Map_Limitx)
@@ -76,6 +83,11 @@ namespace Game_engine_Obscure.InputManager
                 Py = 1;
             }
             
+            if (activeconsole == true){
+                Console.Clear();
+                Console.WriteLine("Inserte el comando"); command = Console.ReadLine();
+                api.Api_Console(command);
+            }
 
         }
     }

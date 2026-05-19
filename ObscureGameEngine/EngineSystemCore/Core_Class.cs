@@ -91,6 +91,11 @@ class Game : Screen_Render_Sceen_Hitbox
             Console.SetCursorPosition(0, 17);
             //Console.WriteLine($"Points: {Player.Points}");
 
+            if (api.Debug_Mode_Apy == true){
+                break; 
+                //pendiente hacer la Console GUI
+            }
+
 
         }
     }
