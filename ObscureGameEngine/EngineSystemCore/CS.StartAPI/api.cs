@@ -8,7 +8,7 @@ using Game_engine_Obscure.Hitbox;
 using Game_engine_Obscure.Game_Manager;
 using System.Runtime.Versioning;
 using Game_engine_Obscure.Kernel; 
-
+using Game_engine_Obscure.accesKey
 
 namespace Game_engine_Obscure.API; 
 
@@ -57,6 +57,11 @@ class api{
             return false; 
         }
 
+        if (command == "Cryptodata"){
+            Console_AccesKey.Console_AccesKey(command);     
+            return true; 
+        }
+
         return false;
     }
-}
+}   
