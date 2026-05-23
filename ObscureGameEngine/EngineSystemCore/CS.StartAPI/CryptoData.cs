@@ -13,7 +13,7 @@ using Game_engine_Obscure.API;
 namespace Game_engine_Obscure.accesKey; 
 
 class console_Cryptodata {
-    private static random  Cryptografic_RandomKey = random(); 
+    private static Random  Cryptografic_RandomKey = random(); 
     static int standarCryptograficKey = 1; //This is the Original Key Secion 
     static string Console_AccesKey(string command){
         int CryptograficKey =  Cryptografic_RandomKey.next(0,4712049710);
