@@ -12,6 +12,8 @@ public static class GameBeheivorData
     public static float _Ia_speed = 1.0f;
     
     public static  int Points = 0;
+
+    public static int Delta_Time_Speed = 1; 
 }
 
 

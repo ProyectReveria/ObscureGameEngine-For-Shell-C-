@@ -3,6 +3,7 @@ using Game_engine_Obscure;
 using Game_engine_Obscure.InputManager;
 using Game_engine_Obscure.Mathematics;
 using Game_engine_Obscure.Game_Manager; 
+using Game_engine_Obscure.API;
 
 
 namespace Game_engine_Obscure.Game_user_Interface_Library;
@@ -46,5 +47,21 @@ internal class GUI
             Console.WriteLine($"Puntuacion {GameBeheivorData.Points}");
             Console.WriteLine("Close System");
         }
+    }
+
+    public static void Game_Engine_API()
+    {
+        string? command; 
+        Console.Clear();
+        Console.ForegroundColor = ConsoleColor.Cyan; 
+        Console.WriteLine("Welcome to obscure engine API"); 
+        Console.WriteLine("./"); 
+        Console.SetCursorPosition(2,2); 
+        command = Console.ReadLine (); 
+        if (command == null)
+        {
+             Console.WriteLine("Restar Console: Fail on command or null");  
+        }
+        Api.Api_Console(command); 
     }
 }

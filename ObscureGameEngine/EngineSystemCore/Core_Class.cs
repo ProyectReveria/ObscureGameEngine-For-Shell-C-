@@ -67,7 +67,7 @@ class Game : Screen_Render_Sceen_Hitbox
 
             for (int B = 0; B < StarterPointBx + 1; B++)
             {
-                Console.SetCursorPosition(Screen_Render_Sceen_Hitbox.StarterPointAx, B);
+                Console.SetCursorPosition(StarterPointAx, B);
                 Console.Write("x");
             }
             for (int B2 = 0; B2 < StarterPointBy + 1; B2++)
