@@ -38,7 +38,16 @@ class Game : Screen_Render_Sceen_Hitbox
 {
     public static void Main(string[] args)
     {
-        api.API_MAIN(); 
+        Console.WriteLine("Desa activar la consola para una revicion? y/N"); 
+        string? comman = Console.ReadLine().ToLower(); 
+        if (comman == "y")
+        {
+            Console.WriteLine("insert command"); 
+            string? api_command = Console.ReadLine();
+            Api.Api_Console(api_command);
+        }
+
+        Api.API_MAIN(); 
         GUI.Game_UI();
         Game_FrameUpdate Start_Point = new Game_FrameUpdate(); 
 
@@ -91,12 +100,7 @@ class Game : Screen_Render_Sceen_Hitbox
             Console.Write("2"); //Enemy
             Console.SetCursorPosition(0, 17);
             //Console.WriteLine($"Points: {Player.Points}");
-
-            if (api.Debug_Mode_Apy == true){
-                break; 
-                //pendiente hacer la Console GUI
-            }
-
+            
 
         }
     }
