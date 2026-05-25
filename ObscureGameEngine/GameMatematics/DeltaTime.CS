@@ -33,19 +33,3 @@ internal class _DeltaTime_ : Math_Alogirth
         }
     }
 }
-
-class Herency
-{
-    public struct CentralDelta
-    {
-        Int64 setdDelta; 
-        Int64 setAlpha; 
-    }
-    public static  int index_Data_FirstData()
-    {
-        
-
-
-        return  0; 
-    }
-}

@@ -49,7 +49,6 @@ namespace Game_engine_Obscure.InputManager
                 case ConsoleKey.S: direccional_Control = controlManager.down; Points++; break;
                 case ConsoleKey.D: direccional_Control = controlManager.left; Points++; break;
                 case ConsoleKey.A: direccional_Control = controlManager.right; Points++; break;
-                case ConsoleKey.k: direccional_Control = controlManager.Dconsole; break; 
             }
 
             switch (direccional_Control)
@@ -58,7 +57,6 @@ namespace Game_engine_Obscure.InputManager
                 case controlManager.down: Py++; break;
                 case controlManager.left: Px++; break;
                 case controlManager.right: Px--; break;
-                case controlManager.Dconsole: activeconsole = true; 
             }
 
             if (Px == ControlMangaer.Map_Limitx)
@@ -81,12 +79,6 @@ namespace Game_engine_Obscure.InputManager
             if (Py < 1)
             {
                 Py = 1;
-            }
-            
-            if (activeconsole == true){
-                Console.Clear();
-                Console.WriteLine("Inserte el comando"); command = Console.ReadLine();
-                api.Api_Console(command);
             }
 
         }

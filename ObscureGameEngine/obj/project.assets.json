@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gamer\\Documents\\GitHub\\ObscureGameEngine-For-Shell-C-\\ObscureGameEngine\\ObscureGameEngine.csproj",
+      "projectUniqueName": "c:\\Users\\gamer\\Documents\\GitHub\\ObscureGameEngine-For-Shell-C-\\ObscureGameEngine\\ObscureGameEngine.csproj",
       "projectName": "ObscureGameEngine",
-      "projectPath": "C:\\Users\\gamer\\Documents\\GitHub\\ObscureGameEngine-For-Shell-C-\\ObscureGameEngine\\ObscureGameEngine.csproj",
+      "projectPath": "c:\\Users\\gamer\\Documents\\GitHub\\ObscureGameEngine-For-Shell-C-\\ObscureGameEngine\\ObscureGameEngine.csproj",
       "packagesPath": "C:\\Users\\gamer\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gamer\\Documents\\GitHub\\ObscureGameEngine-For-Shell-C-\\ObscureGameEngine\\obj\\",
+      "outputPath": "c:\\Users\\gamer\\Documents\\GitHub\\ObscureGameEngine-For-Shell-C-\\ObscureGameEngine\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\gamer\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -62,24 +62,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[8.0.27, 8.0.27]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Host.win-x64",
-            "version": "[8.0.27, 8.0.27]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Ref",
-            "version": "[8.0.27, 8.0.27]"
-          },
-          {
-            "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[8.0.27, 8.0.27]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
