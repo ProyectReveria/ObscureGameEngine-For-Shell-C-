@@ -16,6 +16,7 @@ namespace Game_engine_Obscure.API;
 // La clase debe ser publica para que el resto del motor la pueda ver
 public class Api 
 {
+    public static bool NegativeLimit = false; 
     // Corregido el orden: 'static' va antes que el tipo 'bool'
     private static bool Active_Custom_API = false; 
     public static bool Debug_Mode_API = false; 
@@ -74,6 +75,13 @@ public class Api
         if (command == "Cryptodata")
         {
             Console_Cryptodata.Console_AccesKey(command);     
+            return true; 
+        }
+
+        if (command == "MARCUS! I WANT NEGATIVES AND I DON'T CARE ABOUT YAGNI!")
+        {
+            NegativeLimit = true;
+
             return true; 
         }
         

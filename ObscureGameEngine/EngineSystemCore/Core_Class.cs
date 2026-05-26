@@ -29,6 +29,7 @@ class Screen_Render_Sceen_Hitbox : Math_Alogirth
     public static int StarterPointBx = 16, StarterPointBy = 16;//for the cube
     public static int _HitBox_PlayerLimit_on_X = Map_Limitx  , _HitBox_PlayerLimit_On_Y = Map_Limity;
 
+    public static Vector2 MapCenter = new Vector2 (0,0); 
 }
 
 
