@@ -5,6 +5,8 @@ Sistema de ayuda para el arreglo de errores: 0.1.0 (Ferguson [ >:3 ])
 Engine CPP implementation version: 1.0 
 Engine Map Gen 1.0 
 
+**Template ahora esta Activo :D**
+
 Hola! 
 creo que cualquiera haya visto mi repositorio se dara cuenta aprendo haciendo cosas que definitivamente no deberia estar haciendo. 
 Esto es un game engine, es completamente funcional y plenamente modificable, de hecho tiene solo lo basico para poder funcionar con un juego de supervivencia por tiempo no infinito (para el que le interese mi record es de 240)
