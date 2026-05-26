@@ -1,5 +1,7 @@
 Datos de Version: 2.0.0.:3.>:3 
+
 Version de sistema de deteccion de errores: 0.3.0 (Magnus[ :3 ])
+
 Sistema de ayuda para el arreglo de errores: 0.1.0 (Ferguson [ >:3 ]) 
 
 Engine CPP implementation version: 1.0 
