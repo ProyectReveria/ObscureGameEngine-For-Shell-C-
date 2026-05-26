@@ -11,3 +11,4 @@ Pido perdon si tiene una mala optimizacion (no deberia), aun no eh estudiado muy
 (4) 
 Si, si corre en linux solo es cambiar el archivo lo fuerza a correr solo en windows y retirarlo, es una linea de codigo si no me equiboco en el Core. 
 (5) Codigo abierto
+(6) si ves a "Marcus" o "Ferguson" son mis dos clases de handle Error, si les di nombre y si uno es un enojon el otro no. que no te sorprensa los uso para burlarme de la gente no revisa el codigo antes y usualmente solo sirven para dar alertas de cosas no deberias hacer.
