@@ -2,6 +2,7 @@ using System;
 using System.Numerics;
 using Game_engine_Obscure.Mathematics; 
 using Game_engine_Obscure.Mathematics.VectorialMath;  
+using Game_engine_Obscure.API.HerrorHandler; 
 
 namespace Game_engine_Obscure.Map.io; 
 
@@ -12,16 +13,32 @@ class MapClass : Screen_Render_Sceen_Hitbox
     private static int X_Validpoint; 
     private static int y_Validpoint; 
 
-    public static void MapLimitGeneration(Vector2 BaseMidPoint_Data, Vector2 Center_Data)
+    public static void MapLimitGeneration_internal(Vector2 base_Data, Vector2 top_data)
     {
 
-        Screen_Render_Sceen_Hitbox.floor_limit = new Vector2 (Center_Data.X + 1, Center_Data.Y + 1);
-        Screen_Render_Sceen_Hitbox.Seal_limit = new Vector2 (BaseMidPoint_Data.X -1, BaseMidPoint_Data.Y - 1); 
+        Screen_Render_Sceen_Hitbox.floor_limit = new Vector2 (base_Data.X + 1, base_Data.Y + 1);
+        Screen_Render_Sceen_Hitbox.Seal_limit = new Vector2 (top_data.X -1, top_data.Y - 1); 
 
     }
 
-    public static void Map_Generation(Vector2 baseMidpoint_Data)
+        public static void MapLimitGeneration_External(Vector2 base_Data, Vector2 top_data)
     {
+        if (base_Data.X == 0 && base_Data.Y == 0)
+        {
+            Screen_Render_Sceen_Hitbox.floor_limit = new Vector2 (base_Data.X + 1, base_Data.Y + 1);
+        }else if  (base_Data.X < 3 && base_Data.Y < 3){
+            Screen_Render_Sceen_Hitbox.floor_limit = new Vector2 (base_Data.X - 1, base_Data.Y - 1);
+        }else if (base_Data.X >= 3 && base_Data.Y >= 3)
+        {
+            Screen_Render_Sceen_Hitbox.floor_limit = new Vector2 (base_Data.X - 1, base_Data.Y - 1);
+        }
+        Screen_Render_Sceen_Hitbox.Seal_limit = new Vector2 (top_data.X +1, top_data.Y -+1); 
+    }
+
+    public static void Map_Generation(Vector2 baseMidpoint_Data, bool? External)
+    {
+
+        bool Hvalue = ILoveHandlingErrors.Catch_Null(External); 
 
         
 
@@ -38,7 +55,7 @@ class MapClass : Screen_Render_Sceen_Hitbox
         }else
         {
             Valid_MidPoint = false; 
-            Console.WriteLine($"Invalid BaseMidpoint Cordinates = {baseMidpoint_Data}"); 
+
         }
 
 
@@ -48,7 +65,17 @@ class MapClass : Screen_Render_Sceen_Hitbox
             Vector2 corner_A = baseMidpoint_Data; 
             Vector2 corner_B = new Vector2 (0,baseMidpoint_Data.Y); 
 
-            MapLimitGeneration(corner_A,corner_B); 
+            if (External == true && Hvalue == true )
+            {
+                MapLimitGeneration_External(corner_A,corner_B);
+            }else if (External == false &&  Hvalue ==  true)
+            {
+                MapLimitGeneration_internal(corner_A,corner_B); 
+            }else if (Hvalue == false)
+            {
+                throw new ArgumentNullException(nameof(External), ILoveCorrectPeapol.MapGen_Error_1);
+            }
+
 
             X_Validpoint = (int)baseMidpoint_Data.X; 
             y_Validpoint = (int)baseMidpoint_Data.Y; 
@@ -94,5 +121,5 @@ class MapClass : Screen_Render_Sceen_Hitbox
 
         
     }
-    
+
 }
