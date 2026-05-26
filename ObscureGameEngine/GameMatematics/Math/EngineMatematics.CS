@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Numerics;
 
+
+        //Am... se llama jorge y hace lo que dice abajo de este comentario
 namespace Game_engine_Obscure.Mathematics
 {
     internal class Math_Alogirth

@@ -2,6 +2,14 @@ using System;
 using  Game_engine_Obscure.DeltaTime; 
 namespace Game_engine_Obscure.Game_Manager;
 
+/// <manger>
+/// te presento al todo poderoso, señor de todos nosotros, sumo pontifise de la catedral de marcus, gran dios y slvador de todos nosotors juanito el manger.
+/// 
+/// esto es game manager, contine datos que son importantes y son basicamente un Json en esteroides,porque podes programar funciones aqui.
+/// 
+/// tiene un par de cosas importanets (como el start delta time) por si queiren revisarlas y darles una ojeada. 
+/// </juanito>
+
 public static class GameBeheivorData
 {
     public static bool Sincron = true;
@@ -18,7 +26,7 @@ public static class GameBeheivorData
 
 
 
-public static class GameManager_OperativeBehavior
+public class GameManager_OperativeBehavior
 {
 
     public static bool Game_Active = false;

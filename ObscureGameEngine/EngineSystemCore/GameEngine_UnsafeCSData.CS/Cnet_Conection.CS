@@ -6,6 +6,23 @@ using Game_engine_Obscure.CNect_UnsafeStack;
 
 namespace Game_engine_Obscure.CNect_UnsafeStack.Library; 
 
+
+/// <Cnet>
+/// 
+/// Oh c# llegaste a mi vida tras dos años de negacion
+/// y sigues pareciendome molesto con tus dll
+/// o c#
+/// 
+/// (sip pondre esto en cada DLL)
+/// 
+/// o Cnet, ignorando la referencia a Skinet este es probablemente le archivo mas peligroso de TODO el engine.
+/// esto es un contacto a cpp y es importante se entienda esto: RESERVA MEMORIA
+/// sip el engine tiene un sistema por defecto para reservar memoria y corre a partir de estos dos dll y son tan bolatiles qu eno me soprenderia puedan dañar una gpu
+/// 
+/// Si los tenes que usar (por openGL o Vulkan) valora los riesgos antes
+/// 
+/// </end.ofDiana>
+
 class Cnet_Conector  
 {
 

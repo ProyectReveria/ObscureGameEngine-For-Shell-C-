@@ -9,33 +9,24 @@ using Game_engine_Obscure.Game_Manager;
 using System.Runtime.Versioning;
 using Game_engine_Obscure.Kernel; 
 using Game_engine_Obscure.API; 
+using Game_engine_Obscure.ScreenCite; 
 
-
-//this is githubtest 
-
-namespace Game_engine_Obscure;
-
-
-
-class Screen_Render_Sceen_Hitbox : Math_Alogirth
-{
-
-    public const int Map_Limitx = 16, Map_Limity = 16;
-
-    public static  Vector2 floor_limit; 
-    public static  Vector2 Seal_limit; 
-
-    public static int StarterPointAx = 16, StarterPointAy = 16; //For the cube
-    public static int StarterPointBx = 16, StarterPointBy = 16;//for the cube
-    public static int _HitBox_PlayerLimit_on_X = Map_Limitx  , _HitBox_PlayerLimit_On_Y = Map_Limity;
-
-    public static Vector2 MapCenter = new Vector2 (0,0); 
-}
+///<summary> /// 
+/// 
+/// Como es de Imaginar durante el desarollo existio una clase para probar el engine en si
+/// 
+/// por la forma en que esta desarollado este corre con el codigo completamente abierto
+/// A esto se le llama Enfoque "Blueprint" (o "Plano"), significa que esto es una libreria de clases MUY Grande.
+/// 
+/// Simplemente desactive (oh borre, si lo hace asegurese de borrar el Namespace "Game Engine Obscure.Test")
+/// 
+/// Siempre puede encontrar este mismo ejemplo en todas las versiones LTS a partir de la 1.0
+/// 
+/// </end_ofText>///
 
 
 
-
-
+namespace Game_engine_Obscure.test;
 
 
 [SupportedOSPlatform("Windows")]

@@ -6,6 +6,16 @@ using System.Diagnostics;
 
 namespace Game_engine_Obscure.DeltaTime;
 
+/// <ok dejemos las bromas un minuto esto es de hecho importante>
+/// 
+/// Delta time, notaras que en todos los game engine se llama igual (excepto en rpgmaker, son especialitos aun no descubren que java no funciona para game development)
+/// esto mide el timepo en ticks y los devuelve en segundos.
+/// y si, se llama Aldente.
+/// 
+/// italia te pido perdon
+/// 
+/// </:3>
+
 internal class _DeltaTime_ : Math_Alogirth
 {
 
@@ -30,6 +40,11 @@ internal class _DeltaTime_ : Math_Alogirth
             double deltatime = Corrunt_frame - Start_frame;
 
             Update_Deltatime(deltatime);
+
+            if (deltatime < 0.016666)
+            {
+                System.Threading.Thread.Sleep(1);
+            }
         }
     }
 }

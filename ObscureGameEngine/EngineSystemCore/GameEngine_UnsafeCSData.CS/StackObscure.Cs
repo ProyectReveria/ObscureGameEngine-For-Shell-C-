@@ -3,7 +3,11 @@ using Game_engine_Obscure;
 
 namespace  Game_engine_Obscure.CNect_UnsafeStack; 
 
-//Note: Esta seccion del codigo esta programada con la intencion de comuncarse desde aqui hacia C++, por tanto el codigo de aqui es inestable e inseguro por naturalesa.
+/// <sudo marcus le gusta molestar a gente en 2 bit>
+/// ah c#, esta cosita realmente no tiene uso a fecha de hoy.
+/// 
+/// solamente define el stack, nada importante.
+/// </summary>
 
 unsafe class Stacklloc
 {

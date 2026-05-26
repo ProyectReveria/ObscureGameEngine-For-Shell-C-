@@ -3,6 +3,23 @@ using System.Runtime.InteropServices;
 
 namespace Game_engine_Obscure.Kernel
 {
+
+    /// <casa de Diana>
+    /// 
+    /// Oh c# llegaste a mi vida tras dos años de negacion
+    /// y sigues pareciendome molesto con tus dll
+    /// o c#
+    /// 
+    /// (sip pondre esto en cada DLL)
+    /// 
+    /// Bienvenido a la puerda de Diana AK el AccesPoint DLL del kernel.
+    /// si son solo para tener todo en c#, sip es importante.
+    /// 
+    /// como de costumbre es de diana cuidenlo, no me hagan estallar el motor
+    /// 
+    /// si ocupan pasarlo a linux o mag recuerten cambiar la estructura del dll.
+    /// </summary>
+    /// 
     public class RenderingKernel
     {
         [StructLayout(LayoutKind.Sequential, Pack = 1)]

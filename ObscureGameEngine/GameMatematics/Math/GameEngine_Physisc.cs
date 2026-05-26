@@ -3,6 +3,7 @@ using Game_engine_Obscure.Mathematics;
 using Game_engine_Obscure.DeltaTime;
 using System.Numerics;
 
+            //Palutena quiere las phisicas de vuelta.
 namespace Game_engine_Obscure.Physics; 
 class _Physics_  : Mathematics.Math_Alogirth 
 {

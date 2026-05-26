@@ -7,13 +7,13 @@ using Game_engine_Obscure.Hitbox;
 using Game_engine_Obscure.CNect_UnsafeStack.ScreenRednerPipeline;
 using Game_engine_Obscure.API; 
 
+//<son los controles, justo aqui si pueden toquetear todo, siempre hay una copia en el repositorio, si YO TAMBIEN LOS BORRE UNA VES POR ACCIDENTE (pueden buscarlo)>
 namespace Game_engine_Obscure.InputManager
 {
     
     class ControlMangaer : Screen_Render_Sceen_Hitbox
     {
         public static string command = " "; 
-        private static bool activeconsole = false; 
         public static int Px = 8, Py = 8;
         public static int Px_old, Py_old;
         public static float PxF, PyF; // Cardinal Point on Flotate area (F(x) = Xf, Y; for vectors

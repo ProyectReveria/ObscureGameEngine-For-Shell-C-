@@ -1,8 +1,19 @@
 #include <iostream>
 #include <chrono>
 
+/*
+no mentire deberia borrar esto.
+
+lo que tienen aqui es un delta time en c++.
+
+tienen el de c# es mas rapido de usar y esta cosa es mas presia, menos eficiente.
+
+avisados estan.
+*/
+
 float  GlobalEngineSpeed = 0.0f; 
 extern "C"{
+
 
     __declspec(dllexport) void ExecuteProcess(int* stackData, int stackSize, float EngineSpeed){
 

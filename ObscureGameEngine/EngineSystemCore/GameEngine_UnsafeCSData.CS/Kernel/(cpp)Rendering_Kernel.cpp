@@ -9,9 +9,19 @@
 
 #ifdef Parcel_DAta_Code
 
-//use this in other C++ file for create script gustom lenguajes, base of this can be make other ones using text scan and code inyection. 
-//if you using this be sure to use it well and take in cound is use one % of the C++ process power to only do this
-//if you have to use other lenguaje conect it using C++ not CS, CS have problems of conection
+/* 
+<Primera ves en el Kernel?>
+
+Bienvenido a mi pequeño diminuto y para nada formalziado como libreria puerta a hacer un kernel
+
+debido a la filosofia del engine este esta pensado ya para la gente esta un poco mas loca que yo y quiere su propio lenguaje, sistema de renderizado... openGL no jusgo 
+tambien se openGL.
+
+cabe recalcar esto es un esqueleto
+
+posdata: el kernel se llama Diana, cuidamelo si? que lo hice con cariño para mis enfermos mentales favoritos (ak Cientificos computacionales)
+
+*/
 
 
 enum class Token_API_DATA{
