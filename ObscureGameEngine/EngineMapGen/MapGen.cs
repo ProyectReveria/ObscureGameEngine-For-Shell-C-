@@ -16,6 +16,17 @@ namespace Game_engine_Obscure.Map.io;
 ///
 /// </summary>
 
+
+enum World_Generate_Data
+{
+        player = '\x03B8', 
+        wall  = '\x00DF', 
+        Enemy = '\u25CB', 
+        door,//Agrega mas elementos si hace falta 
+}
+
+
+//base de algoritmo de generacion procedural
 class MapClass_MidPointAlgorithm : Screen_Render_Sceen_Hitbox 
 {
     
@@ -132,4 +143,38 @@ class MapClass_MidPointAlgorithm : Screen_Render_Sceen_Hitbox
         
     }
 
+}
+
+//base de generacion Lineal
+class Generate_Map_Dynamic
+{
+    public static void Dynamic_Generative_Data(Vector2 Cordinates_T)
+    {
+        float X_T = Cordinates_T.X; 
+        float Y_T = Cordinates_T.Y; 
+
+        for (int i = 0; i < (int)X_T; i++)
+        {
+            Console.SetCursorPosition((int)X_T,0);
+            Console.Write(World_Generate_Data.wall); 
+        }
+
+        for (int i = 0; i < (int)Y_T; i++)
+        {
+            Console.SetCursorPosition(0,(int)X_T); 
+            Console.WriteLine(World_Generate_Data.wall); 
+        }
+
+        for (int i = 0; i < (int)X_T; i++)
+        {
+            Console.SetCursorPosition((int)X_T,(int)Y_T); 
+            Console.WriteLine(World_Generate_Data.wall); 
+        }
+
+        for (int i = 0; i < (int)Y_T; i++)
+        {
+            Console.SetCursorPosition((int)Y_T,(int)X_T); 
+            Console.WriteLine(World_Generate_Data.wall); 
+        }
+    }
 }
