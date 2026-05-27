@@ -4,7 +4,8 @@ using Game_engine_Obscure.Mathematics;
 using Game_engine_Obscure.Mathematics.VectorialMath;  
 using Game_engine_Obscure.API.HerrorHandler; 
 using Game_engine_Obscure.test; 
-using Game_engine_Obscure.ScreenCite; 
+using Game_engine_Obscure.ScreenCite;
+using System.Runtime.CompilerServices;
 
 namespace Game_engine_Obscure.Map.io; 
 
@@ -30,7 +31,7 @@ enum World_Generate_Data
 class MapClass_MidPointAlgorithm : Screen_Render_Sceen_Hitbox 
 {
     
-    public static bool Valid_MidPoint = false; 
+     public static bool Valid_MidPoint = false; 
     private static int X_Validpoint; 
     private static int y_Validpoint; 
 

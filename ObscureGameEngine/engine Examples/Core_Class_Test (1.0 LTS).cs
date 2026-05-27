@@ -30,7 +30,7 @@ namespace Game_engine_Obscure.test;
 
 
 [SupportedOSPlatform("Windows")]
-class Game : Screen_Render_Sceen_Hitbox
+[Obsolete("1.0 LTS Core Example")] class Game : Screen_Render_Sceen_Hitbox
 {
     public static void Main(string[] args)
     {
