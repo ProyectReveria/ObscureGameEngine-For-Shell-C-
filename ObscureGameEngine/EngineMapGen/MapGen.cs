@@ -3,9 +3,9 @@ using System.Numerics;
 using Game_engine_Obscure.Mathematics; 
 using Game_engine_Obscure.Mathematics.VectorialMath;  
 using Game_engine_Obscure.API.HerrorHandler; 
-using Game_engine_Obscure.test; 
 using Game_engine_Obscure.ScreenCite;
 using System.Runtime.CompilerServices;
+using Game_engine_Obscure.API.Engine;
 
 namespace Game_engine_Obscure.Map.io; 
 
@@ -18,7 +18,7 @@ namespace Game_engine_Obscure.Map.io;
 /// </summary>
 
 
-enum World_Generate_Data
+enum World_Generate_Data : 
 {
         player = '\x03B8', 
         wall  = '\x00DF', 

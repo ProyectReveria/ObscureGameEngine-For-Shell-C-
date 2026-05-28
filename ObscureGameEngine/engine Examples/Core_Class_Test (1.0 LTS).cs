@@ -24,7 +24,7 @@ using Game_engine_Obscure.ScreenCite;
 /// 
 /// </end_ofText>///
 
-
+#if Open_Example_obc
 
 namespace Game_engine_Obscure.test;
 
@@ -102,6 +102,8 @@ namespace Game_engine_Obscure.test;
     }
 
 }
+
+#endif 
 
 
 

@@ -19,8 +19,16 @@ class ILoveCorrectPeapol // >:3
     //MapGen
     public static String MapGen_Error_1 = "MapGen [1] : punto base invalido"; // MapGen: Null External or Internal declaration of map generation
 
+    
     //Serialization
     public static String Seralization_1 = "Serialziation [1] [>:3]: el save file no se creo correctamente"; 
+
+    //Special Commands
+
+    public static String  Curontine_1 = "Curontine[1] [:3]: La duracion o la cantidad de siclos son iguales a 0 o nulas ";
+
+
+    
 }
 
 class ILoveHandlingErrors // :3
