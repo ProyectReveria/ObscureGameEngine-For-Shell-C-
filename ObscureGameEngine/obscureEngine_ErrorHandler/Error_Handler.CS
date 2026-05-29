@@ -27,6 +27,10 @@ class ILoveCorrectPeapol // >:3
 
     public static String  Curontine_1 = "Curontine[1] [:3]: La duracion o la cantidad de siclos son iguales a 0 o nulas ";
 
+    //Kernel
+
+    public static string Kernel_1 = "Kernel[!1!] = GPU cicles can't run on C# if Game is not Active in the proper variable"; 
+
 
     
 }

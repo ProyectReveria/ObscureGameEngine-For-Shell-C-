@@ -32,8 +32,12 @@ namespace Game_engine_Obscure.SaveFile
 
     public class On_SaveFile_Event
     {
-        public static void _Event_OnSaveFile(bool save_State, Vector2 P_Position, int points, Vector2 E_Position, Vector2 seed)
+        public static async Task _Event_OnSaveFile(bool save_State, Vector2 P_Position, int points, Vector2 E_Position, Vector2 seed)
         {
+            string SaveFileName = "JsonSaveFile.Json"; 
+            string BaseFolder = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData); 
+            string FilePath = Path.Combine(BaseFolder, SaveFileName); 
+            
             var On_SaveFile = new Save_File_Serializate
             {
                 SaveFile_Enable = save_State,
@@ -41,20 +45,16 @@ namespace Game_engine_Obscure.SaveFile
                 Points = points,
                 SAveFile_EnemyPosition = E_Position, 
                 Map_Gen_savFile = seed
-            };
-            var option = new JsonSerializerOptions {WriteIndented = true}; 
-            string JsonSaveFile = JsonSerializer.Serialize(On_SaveFile, option);
+            }; 
 
-            try
+            using (FileStream JsonSaveFile = File.Create(FilePath))
             {
-                File.WriteAllText("Save_File.Json", JsonSaveFile);
-                Console.Write("Marcus [:3]:  Ya guarde la Partida, puede ser encontrada en los archivos como Save_File.Json"); 
-            }catch (Exception Excepti_onSerial)
-            {
-                throw new ArgumentException(nameof(On_SaveFile), ILoveCorrectPeapol.Seralization_1); 
+                await JsonSerializer.SerializeAsync(JsonSaveFile, On_SaveFile); 
             }
+
+
+
+
         }
-    } 
-
-
+    }
 }

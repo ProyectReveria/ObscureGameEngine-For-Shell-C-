@@ -1,0 +1,21 @@
+{
+    "World Configs" : {
+        "x": 0.0,
+        "Y" : 0.0
+    },
+
+    "PlayerStadistics" : {
+        "Health" : {
+            "Small_Text" : "HP", 
+            "Value" : 0 
+        }
+    }, 
+
+    "IA_Stadistics" : {
+        "Active" : {
+            "Status" : true, 
+            "In_Use": false 
+        }
+    }
+
+}

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ObscureGameEngine")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+72ffead306aa1f67234ec18deb803209a246d52d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0bbaa9e20ddac2e58be992e613ef4a69a30317f8")]
 [assembly: System.Reflection.AssemblyProductAttribute("ObscureGameEngine")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ObscureGameEngine")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

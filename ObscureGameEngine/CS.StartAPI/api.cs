@@ -10,6 +10,7 @@ using Game_engine_Obscure.Game_Manager;
 using System.Runtime.Versioning;
 using Game_engine_Obscure.Kernel; 
 using Game_engine_Obscure.accesKey;
+using Game_engine_Obscure.Kernel.Diana; 
 
 namespace Game_engine_Obscure.API; 
 
@@ -106,6 +107,12 @@ public class Api
             NegativeLimit = true;
 
             return true; 
+        }
+
+        if (command == "Diana, how much you eat today?.Kernel")
+        {
+            Console.WriteLine($"GPU cicles = {SafeKernelData.Tick_Public}");
+            return true;
         }
         
 

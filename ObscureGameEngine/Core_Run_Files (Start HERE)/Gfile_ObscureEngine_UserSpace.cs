@@ -15,7 +15,8 @@ using Game_engine_Obscure;
 using System.Runtime.CompilerServices;
 using System.Runtime.Serialization;
 //Save File (De nada se que siempre se ocupa)
-using Game_engine_Obscure.SaveFile; 
+using Game_engine_Obscure.SaveFile;
+using System.Security.Cryptography.X509Certificates;
 
 ///<summary>///
 /// 
@@ -41,15 +42,26 @@ using Game_engine_Obscure.SaveFile;
 namespace Game_engine_Obscure; 
 class Obscure_Game_Engine : GameManager_OperativeBehavior
 {
+    public class Game_FrameUpdate
+    {
+        public static float Update_Frame = 60; 
+        public static float Status_update = 0; 
+    }
     public static bool GameActive = GameManager_OperativeBehavior.Game_Active; 
-    /*
+
+    
 
     public static void main(){
 
+
+
+
+
     //!Game Active: 
-    GameManager_OperativeBehavior.Game_Active = true
+
     
     }
 
-    */ 
-} 
+
+
+}

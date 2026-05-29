@@ -18,7 +18,7 @@ namespace Game_engine_Obscure.Map.io;
 /// </summary>
 
 
-enum World_Generate_Data : 
+enum World_Generate_Data 
 {
         player = '\x03B8', 
         wall  = '\x00DF', 
