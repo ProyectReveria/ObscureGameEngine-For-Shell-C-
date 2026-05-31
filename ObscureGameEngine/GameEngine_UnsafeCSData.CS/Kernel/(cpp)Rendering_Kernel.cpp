@@ -40,11 +40,11 @@ struct Token_API_ASIGNATION{
 }; 
 
 struct Lenguaje_Parcel {
-    static bool Parcel_API = false; 
+    static bool constexpr Parcel_API = false; 
     //<STATIC API ON READ ONLY>//
-    static bool CS_API = true; //<implement by Native>// 
-    static bool Cpp_API = true; //<implement by native>// 
-    static bool lua_API = false; //<not implement now>// 
+    static bool constexpr CS_API = true; //<implement by Native>// 
+    static bool constexpr Cpp_API = true; //<implement by native>// 
+    static bool constexpr lua_API = false; //<not implement now>// 
     //<STATIC API ON READ ONLY>// 
 };
 
@@ -60,10 +60,10 @@ std::int64_t data = 0;
 
 struct Parcel_Reader_nbits{
 
-    static std::int32_t standar_Win32_RunCode = 16; 
-    static std::int64_t standar_win64_RunCode = 64; //Also standar AMRx86 
-    static std::int32_t standar_i386_RunCode = 32; 
-    static std::int64_t GustomStandar_Nbits_Runcode = data; 
+    static std::int32_t constexpr standar_Win32_RunCode = 16; 
+    static std::int64_t constexpr standar_win64_RunCode = 64; //Also standar AMRx86 
+    static std::int32_t constexpr standar_i386_RunCode = 32; 
+    std::int64_t GustomStandar_Nbits_Runcode = data; 
 
     std::string KernelVersion = "Prototipe 0.0.3"; 
 
@@ -129,12 +129,7 @@ class DataStruct {
         return  MemoryData_Ts;
     }
 
-
-
-
-
-
-
+    
 
 }; 
 

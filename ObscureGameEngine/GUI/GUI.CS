@@ -1,13 +1,13 @@
 using System; 
-using Game_engine_Obscure; 
-using Game_engine_Obscure.InputManager;
-using Game_engine_Obscure.Mathematics;
-using Game_engine_Obscure.Game_Manager; 
-using Game_engine_Obscure.API;
+using ObscureEngine; 
+using ObscureEngine.InputManager;
+using ObscureEngine.Mathematics;
+using ObscureEngine.Game_Manager; 
+using ObscureEngine.API;
 
 //Game user interface, muy descriptivo Gaerman de la uriña Stuckti 
 
-namespace Game_engine_Obscure.Game_user_Interface_Library;
+namespace ObscureEngine.Game_user_Interface_Library;
 
 
 internal class GUI

@@ -1,7 +1,7 @@
 using System; 
-using Game_engine_Obscure; 
+using ObscureEngine; 
 
-namespace  Game_engine_Obscure.CNect_UnsafeStack; 
+namespace  ObscureEngine.CNect_UnsafeStack; 
 
 /// <sudo marcus le gusta molestar a gente en 2 bit>
 /// ah c#, esta cosita realmente no tiene uso a fecha de hoy.

@@ -1,18 +1,18 @@
 using System;
 using System.Numerics;
-using Game_engine_Obscure.DeltaTime;
-using Game_engine_Obscure.Mathematics;
-using Game_engine_Obscure.InputManager;
-using Game_engine_Obscure.InputManager.IA;
-using Game_engine_Obscure.Game_user_Interface_Library;
-using Game_engine_Obscure.Hitbox;
-using Game_engine_Obscure.Game_Manager;
+using ObscureEngine.DeltaTime;
+using ObscureEngine.Mathematics;
+using ObscureEngine.InputManager;
+using ObscureEngine.InputManager.IA;
+using ObscureEngine.Game_user_Interface_Library;
+using ObscureEngine.Hitbox;
+using ObscureEngine.Game_Manager;
 using System.Runtime.Versioning;
-using Game_engine_Obscure.Kernel; 
-using Game_engine_Obscure.accesKey;
-using Game_engine_Obscure.Kernel.Diana; 
+using ObscureEngine.Kernel; 
+using ObscureEngine.accesKey;
+using ObscureEngine.Kernel.Diana; 
 
-namespace Game_engine_Obscure.API; 
+namespace ObscureEngine.API; 
 
 /// <summary>
 /// 

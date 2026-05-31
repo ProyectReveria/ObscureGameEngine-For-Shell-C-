@@ -1,6 +1,6 @@
 using System; 
-using  Game_engine_Obscure.DeltaTime; 
-namespace Game_engine_Obscure.Game_Manager;
+using  ObscureEngine.DeltaTime; 
+namespace ObscureEngine.Game_Manager;
 
 /// <manger>
 /// te presento al todo poderoso, señor de todos nosotros, sumo pontifise de la catedral de marcus, gran dios y slvador de todos nosotors juanito el manger.
@@ -22,6 +22,9 @@ public static class GameBeheivorData
     public static  int Points = 0;
 
     public static int Delta_Time_Speed = 1; 
+
+    //playerStats
+    public static int JumpForce = 2; 
 }
 
 

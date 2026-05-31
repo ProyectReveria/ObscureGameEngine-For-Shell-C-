@@ -1,10 +1,10 @@
 using System; 
 using System.Numerics;
-using Game_engine_Obscure.Mathematics; 
-using Game_engine_Obscure.Map.io; 
-using Game_engine_Obscure.InputManager; 
+using ObscureEngine.Mathematics; 
+using ObscureEngine.Map.io; 
+using ObscureEngine.InputManager; 
 
-namespace Game_engine_Obscure.Mathematics.VectorialMath; 
+namespace ObscureEngine.Mathematics.VectorialMath; 
 
 /// <:3>
 /// ok este es also importante MARCUS TU CARA.

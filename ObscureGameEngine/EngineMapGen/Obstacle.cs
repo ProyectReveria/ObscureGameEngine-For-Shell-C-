@@ -1,8 +1,8 @@
 using System;
 using System.Numerics;
-using Game_engine_Obscure.API.Engine;
+using ObscureEngine.API.Engine;
 
-namespace Game_engine_Obscure.Map.Obstacles; 
+namespace ObscureEngine.Map.Obstacles; 
 
 class Obstacles_KITTYKAT : Engine_Special_Names
 {

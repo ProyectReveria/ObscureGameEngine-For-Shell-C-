@@ -1,13 +1,13 @@
 using System;
 using System.Numerics;
-using Game_engine_Obscure.Mathematics; 
-using Game_engine_Obscure.Mathematics.VectorialMath;  
-using Game_engine_Obscure.API.HerrorHandler; 
-using Game_engine_Obscure.ScreenCite;
+using ObscureEngine.Mathematics; 
+using ObscureEngine.Mathematics.VectorialMath;  
+using ObscureEngine.API.HerrorHandler; 
+using ObscureEngine.ScreenCite;
 using System.Runtime.CompilerServices;
-using Game_engine_Obscure.API.Engine;
+using ObscureEngine.API.Engine;
 
-namespace Game_engine_Obscure.Map.io; 
+namespace ObscureEngine.Map.io; 
 
 /// <summary>
 /// 

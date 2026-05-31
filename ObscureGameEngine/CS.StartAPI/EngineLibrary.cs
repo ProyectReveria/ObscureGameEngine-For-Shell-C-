@@ -1,8 +1,9 @@
 using System;
 using System.Runtime.CompilerServices;
-using Game_engine_Obscure.API.HerrorHandler; 
+using ObscureEngine.API.HerrorHandler;
+using ObscureEngine.DeltaTime;
 
-namespace Game_engine_Obscure.API.Engine; 
+namespace ObscureEngine.API.Engine; 
 
 public class Engine_Special_Names
 {
@@ -36,6 +37,12 @@ public class Engine_Special_Names
     public static void on_Stop(int time)
     {
         Thread.Sleep(time); 
+    }
+
+
+    public static void on_DeltaTime()
+    {
+        _DeltaTime_.RunDeltaTime(); 
     }
 
 }

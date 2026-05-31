@@ -2,9 +2,9 @@ using System;
 using System.Numerics;
 using System.Text.Json; 
 using System.IO; 
-using Game_engine_Obscure.Game_Manager;
+using ObscureEngine.Game_Manager;
 using Microsoft.VisualBasic;
-using Game_engine_Obscure.API.HerrorHandler; 
+using ObscureEngine.API.HerrorHandler; 
 
 ///<SAVE FILES!>
 /// 
@@ -17,7 +17,7 @@ using Game_engine_Obscure.API.HerrorHandler;
 /// 
 /// <\end_ofText>
 
-namespace Game_engine_Obscure.SaveFile
+namespace ObscureEngine.SaveFile
 {
     public class Save_File_Serializate
     {

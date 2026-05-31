@@ -1,8 +1,8 @@
 using System; 
 using System.Numerics; 
-using Game_engine_Obscure.Mathematics;
+using ObscureEngine.Mathematics;
 
-namespace Game_engine_Obscure.ScreenCite; 
+namespace ObscureEngine.ScreenCite; 
 
 /// <summary>
 /// 

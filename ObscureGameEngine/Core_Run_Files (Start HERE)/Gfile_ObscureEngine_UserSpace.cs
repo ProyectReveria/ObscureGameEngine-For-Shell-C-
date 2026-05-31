@@ -2,20 +2,20 @@
 using System; 
 using System.Numerics;
 //Obscure Library and Internal Lenguaje 
-using Game_engine_Obscure.DeltaTime;
-using Game_engine_Obscure.Mathematics;
-using Game_engine_Obscure.InputManager;
-using Game_engine_Obscure.InputManager.IA;
-using Game_engine_Obscure.Game_user_Interface_Library;
-using Game_engine_Obscure.Game_Manager;
+using ObscureEngine.DeltaTime;
+using ObscureEngine.Mathematics;
+using ObscureEngine.InputManager;
+using ObscureEngine.InputManager.IA;
+using ObscureEngine.Game_user_Interface_Library;
+using ObscureEngine.Game_Manager;
 using System.Runtime.Versioning;
-using Game_engine_Obscure.Kernel; 
-using Game_engine_Obscure.API;
-using Game_engine_Obscure;
+using ObscureEngine.Kernel; 
+using ObscureEngine.API;
+using ObscureEngine;
 using System.Runtime.CompilerServices;
 using System.Runtime.Serialization;
 //Save File (De nada se que siempre se ocupa)
-using Game_engine_Obscure.SaveFile;
+using ObscureEngine.SaveFile;
 using System.Security.Cryptography.X509Certificates;
 
 ///<summary>///
@@ -39,8 +39,8 @@ using System.Security.Cryptography.X509Certificates;
 /// 
 /// </end_ofText> ///
 
-namespace Game_engine_Obscure; 
-class Obscure_Game_Engine : GameManager_OperativeBehavior
+namespace ObscureEngine; 
+class ObscureEngine_Main : GameManager_OperativeBehavior
 {
     public class Game_FrameUpdate
     {
@@ -51,7 +51,7 @@ class Obscure_Game_Engine : GameManager_OperativeBehavior
 
     
 
-    public static void main(){
+    public static void Main(string[] args){
 
 
 

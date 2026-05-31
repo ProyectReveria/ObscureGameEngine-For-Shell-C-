@@ -1,10 +1,10 @@
 using System; 
-using Game_engine_Obscure.Mathematics;
-using Game_engine_Obscure.DeltaTime;
+using ObscureEngine.Mathematics;
+using ObscureEngine.DeltaTime;
 using System.Numerics;
 
             //Palutena quiere las phisicas de vuelta.
-namespace Game_engine_Obscure.Physics; 
+namespace ObscureEngine.Physics; 
 class _Physics_  : Mathematics.Math_Alogirth 
 {
     class Universal_Constants

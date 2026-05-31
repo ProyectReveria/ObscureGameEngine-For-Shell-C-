@@ -1,10 +1,10 @@
-﻿using Game_engine_Obscure;
-using Game_engine_Obscure.Mathematics;
-using Game_engine_Obscure.Game_Manager;
+﻿using ObscureEngine;
+using ObscureEngine.Mathematics;
+using ObscureEngine.Game_Manager;
 using System;
 using System.Diagnostics;
 
-namespace Game_engine_Obscure.DeltaTime;
+namespace ObscureEngine.DeltaTime;
 
 /// <ok dejemos las bromas un minuto esto es de hecho importante>
 /// 

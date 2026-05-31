@@ -1,21 +1,21 @@
-using Game_engine_Obscure;
-using Game_engine_Obscure.InputManager;
-using Game_engine_Obscure.InputManager.IA;
-using Game_engine_Obscure.Mathematics;
-using Game_engine_Obscure.DeltaTime;
-using Game_engine_Obscure.Hitbox;
-using Game_engine_Obscure.ScreenCite; 
+using ObscureEngine;
+using ObscureEngine.InputManager;
+using ObscureEngine.InputManager.IA;
+using ObscureEngine.Mathematics;
+using ObscureEngine.DeltaTime;
+using ObscureEngine.Hitbox;
+using ObscureEngine.ScreenCite; 
 using System;
 using System.Numerics;
-using Game_engine_Obscure.Game_user_Interface_Library;
-using Game_engine_Obscure.Game_Manager;
+using ObscureEngine.Game_user_Interface_Library;
+using ObscureEngine.Game_Manager;
 
 ///<completionlist cref="IA"/>
 /// ok lean bien
 /// esta es la IA, si la IA es determinista denle una hojada y lean la documentacion (si es que la hago)
 /// esta consume exactamente 12 siclos por cada 16 acciones, si es terrible eficiente y s me costo hacerla.
 /// traten de protegerla.
-namespace Game_engine_Obscure.InputManager.IA;
+namespace ObscureEngine.InputManager.IA;
 
 internal class Enemy_IA : ControlMangaer
 {

@@ -1,9 +1,9 @@
 using System;
 using System.Numerics;
-using Game_engine_Obscure;
-using Game_engine_Obscure.API; 
+using ObscureEngine;
+using ObscureEngine.API; 
 
-namespace Game_engine_Obscure.Yagnie_Y_Marcus_Enojaos;
+namespace ObscureEngine.Yagnie_Y_Marcus_Enojaos;
 /// <yo avise>
 /// 
 ///                         :3

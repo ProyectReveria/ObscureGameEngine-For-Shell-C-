@@ -1,11 +1,11 @@
 using System.Runtime.InteropServices; 
 using System.Diagnostics;
 using System.Numerics;
-using Game_engine_Obscure.Game_Manager;
+using ObscureEngine.Game_Manager;
 using System.Data;
-using Game_engine_Obscure.API.HerrorHandler;
+using ObscureEngine.API.HerrorHandler;
 
-namespace Game_engine_Obscure.Kernel.Diana; 
+namespace ObscureEngine.Kernel.Diana; 
 
 
 public unsafe class Kernel_Corontine

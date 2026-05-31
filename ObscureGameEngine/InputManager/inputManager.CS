@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Game_engine_Obscure.Hitbox;
-using Game_engine_Obscure.CNect_UnsafeStack.ScreenRednerPipeline;
-using Game_engine_Obscure.API; 
+using ObscureEngine.Hitbox;
+using ObscureEngine.CNect_UnsafeStack.ScreenRednerPipeline;
+using ObscureEngine.API; 
 
 //<son los controles, justo aqui si pueden toquetear todo, siempre hay una copia en el repositorio, si YO TAMBIEN LOS BORRE UNA VES POR ACCIDENTE (pueden buscarlo)>
-namespace Game_engine_Obscure.InputManager
+namespace ObscureEngine.InputManager
 {
     
     class ControlMangaer : Screen_Render_Sceen_Hitbox

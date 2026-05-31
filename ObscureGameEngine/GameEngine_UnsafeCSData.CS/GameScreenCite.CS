@@ -1,8 +1,8 @@
 using System;
 using System.Runtime.InteropServices;
-using Game_engine_Obscure.Mathematics; 
+using ObscureEngine.Mathematics; 
 
-namespace Game_engine_Obscure.CNect_UnsafeStack.ScreenRednerPipeline; 
+namespace ObscureEngine.CNect_UnsafeStack.ScreenRednerPipeline; 
 
 
 

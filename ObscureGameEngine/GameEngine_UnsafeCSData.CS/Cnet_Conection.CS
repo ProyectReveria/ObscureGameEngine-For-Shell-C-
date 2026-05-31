@@ -1,10 +1,10 @@
 using System;
 using System.Runtime.InteropServices;
-using Game_engine_Obscure.DeltaTime; 
-using Game_engine_Obscure.Game_Manager;
-using Game_engine_Obscure.CNect_UnsafeStack; 
+using ObscureEngine.DeltaTime; 
+using ObscureEngine.Game_Manager;
+using ObscureEngine.CNect_UnsafeStack; 
 
-namespace Game_engine_Obscure.CNect_UnsafeStack.Library; 
+namespace ObscureEngine.CNect_UnsafeStack.Library; 
 
 
 /// <Cnet>

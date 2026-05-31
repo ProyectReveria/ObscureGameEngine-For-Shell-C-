@@ -1,7 +1,7 @@
 using System;
 using System.Runtime.InteropServices;
 
-namespace Game_engine_Obscure.Kernel
+namespace ObscureEngine.Kernel
 {
 
     /// <casa de Diana>

@@ -1,6 +1,6 @@
 using System; 
 
-namespace Game_engine_Obscure.API.HerrorHandler; 
+namespace ObscureEngine.API.HerrorHandler; 
 /// <summary>
 /// A que no sabias de donde nace Marcus y Ferguson. bienvenido a Obscure Engine Erro Handler.
 /// 
