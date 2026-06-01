@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cstring> 
+
 /*
 
 Este es el cuarto de Laura, porfi molestenla, esto es como en linux NO HAY HUEVOS A UN sudo "rm -rf --no-preserve-root" 
