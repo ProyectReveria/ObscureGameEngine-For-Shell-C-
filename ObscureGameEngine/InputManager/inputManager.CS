@@ -1,25 +1,46 @@
 using System;
 using System.Collections.Generic;
+using System.Numerics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using ObscureEngine.Hitbox;
 using ObscureEngine.CNect_UnsafeStack.ScreenRednerPipeline;
 using ObscureEngine.API; 
+using ObscureEngine.WorldConfigs;
+using ObscureEngine.SaveFile;
 
 //<son los controles, justo aqui si pueden toquetear todo, siempre hay una copia en el repositorio, si YO TAMBIEN LOS BORRE UNA VES POR ACCIDENTE (pueden buscarlo)>
 namespace ObscureEngine.InputManager
 {
+    /// <summary>
+    /// <exception cref="Px,PY"></exception>
+    /// Recuerden Colocarle las cordenas.
+    /// PX y PY son las cordenadas del jugador como un int, por tanto deben convertirse en int usando un Cast.
+    /// De hay en fuera todo nada como la ceda.
+    /// </summary>
+
     
     class ControlMangaer : Screen_Render_Sceen_Hitbox
     {
         public static string command = " "; 
-        public static int Px = 8, Py = 8;
+        public static int Px , Py ;
         public static int Px_old, Py_old;
         public static float PxF, PyF; // Cardinal Point on Flotate area (F(x) = Xf, Y; for vectors
         public static float PxF_old = Px_old, PyF_old = Py_old; // Cardinal Point on Flotate area (F(x) = Xf, Y; for vectors
         public static int Points = 0;
         ConsoleKeyInfo key = Console.ReadKey(true);
+        
+
+        public class Hitbox
+        {
+            public static void Hitbox_Update()
+            {
+                
+            }
+        }
+        
+        
 
         //Controles
 
@@ -29,7 +50,6 @@ namespace ObscureEngine.InputManager
             down,
             left,
             right,
-            Dconsole, 
             none,
         }
 

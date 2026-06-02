@@ -1,5 +1,5 @@
 {
-  "version": 4,
+  "version": 3,
   "targets": {
     "net8.0": {}
   },
@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\gamer\\Documents\\GitHub\\ObscureGameEngine-For-Shell-C-\\ObscureGameEngine\\ObscureGameEngine.csproj",
+      "projectUniqueName": "C:\\Users\\gamer\\RiderProjects\\Obscure_Game_Engine_2.0__for_Shell\\ObscureGameEngine\\ObscureGameEngine.csproj",
       "projectName": "ObscureGameEngine",
-      "projectPath": "c:\\Users\\gamer\\Documents\\GitHub\\ObscureGameEngine-For-Shell-C-\\ObscureGameEngine\\ObscureGameEngine.csproj",
+      "projectPath": "C:\\Users\\gamer\\RiderProjects\\Obscure_Game_Engine_2.0__for_Shell\\ObscureGameEngine\\ObscureGameEngine.csproj",
       "packagesPath": "C:\\Users\\gamer\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\gamer\\Documents\\GitHub\\ObscureGameEngine-For-Shell-C-\\ObscureGameEngine\\obj\\",
+      "outputPath": "C:\\Users\\gamer\\RiderProjects\\Obscure_Game_Engine_2.0__for_Shell\\ObscureGameEngine\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\gamer\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -30,7 +30,6 @@
       },
       "frameworks": {
         "net8.0": {
-          "framework": "net8.0",
           "targetAlias": "net8.0",
           "projectReferences": {}
         }
@@ -49,7 +48,6 @@
     },
     "frameworks": {
       "net8.0": {
-        "framework": "net8.0",
         "targetAlias": "net8.0",
         "imports": [
           "net461",

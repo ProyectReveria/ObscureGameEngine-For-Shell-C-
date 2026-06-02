@@ -15,9 +15,13 @@ using ObscureEngine.Game_Manager;
 /// esta es la IA, si la IA es determinista denle una hojada y lean la documentacion (si es que la hago)
 /// esta consume exactamente 12 siclos por cada 16 acciones, si es terrible eficiente y s me costo hacerla.
 /// traten de protegerla.
+#pragma warning disable ObscureEngine Module Obsolete and Reworket alreary. 
+
 namespace ObscureEngine.InputManager.IA;
 
-internal class Enemy_IA : ControlMangaer
+
+#if UseLegacyIA
+[Obsolete("1.0 LTS Core IAModule")] internal class Enemy_IA : ControlMangaer
 {
     public static int _IA_Position_X = Math_Alogirth.RNG.Next(0, Screen_Render_Sceen_Hitbox.Map_Limitx - 1), _IA_Position_Y = Math_Alogirth.RNG.Next(0, Screen_Render_Sceen_Hitbox.Map_Limity - 1);
     public static float _IA_FloatPostion_X, _IA_FloatPostion_Y;
@@ -34,7 +38,7 @@ internal class Enemy_IA : ControlMangaer
 
 }
 
-class _IA_LogicalDetector : Enemy_IA
+[Obsolete("1.0 LTS Core IAModule")]class _IA_LogicalDetector : Enemy_IA
 {
     public static float _IA_Logical_Cardinal_X, _IA_Logical_Cardinal_Y;
     public static Vector2 location = new Vector2(_IA_LogicalDetector._IA_Logical_Cardinal_X, _IA_Logical_Cardinal_Y); // Ia Location eh puesto esto despues.
@@ -84,7 +88,7 @@ class _IA_LogicalDetector : Enemy_IA
     }
 }
 
-class IA_Logical_Controler : Enemy_IA
+[Obsolete("1.0 LTS Core IAModule")] class IA_Logical_Controler : Enemy_IA
 {
     public static void Enemy_IA_Controler()
     {
@@ -129,3 +133,4 @@ class IA_Logical_Controler : Enemy_IA
 
     }
 }
+#endif

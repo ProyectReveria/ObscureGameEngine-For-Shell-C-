@@ -7,7 +7,11 @@
     "PlayerStadistics" : {
         "Health" : {
             "Small_Text" : "HP", 
-            "Value" : 0 
+            "Value" : 0
+        },
+        "Position" : {
+            "Player_Position_X" : 0,
+            "Player+Position_Y" : 0
         }
     }, 
 

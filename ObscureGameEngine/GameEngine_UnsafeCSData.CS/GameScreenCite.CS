@@ -14,8 +14,8 @@ unsafe class Screen_Render_Sceen_Hitbox : Math_Alogirth
     int* Map_Limity_Memory;
     public const int Map_Limitx = 16, Map_Limity = 16;
 
-       public static int StarterPointAx = 16, StarterPointAy = 16; //For the cube
-    public static int StarterPointBx = 16, StarterPointBy = 16;//for the cube
+       public static int StarterPointAx , StarterPointAy ; //For the cube
+    public static int StarterPointBx , StarterPointBy ;//for the cube
     public static int _HitBox_PlayerLimit_on_X = Map_Limitx  , _HitBox_PlayerLimit_On_Y = Map_Limity;
 
     public void Memory_Reservation()

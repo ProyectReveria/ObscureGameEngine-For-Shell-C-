@@ -58,3 +58,31 @@ namespace ObscureEngine.SaveFile
         }
     }
 }
+
+public class Deserialice_Save_File
+{
+    public class JsonSaveFile
+    {
+        public bool SaveFile_Enable { get; set; }
+        public Vector2 SaveFile_Player_Position { get; set; }
+        public int Points { get; set; }
+
+        public Vector2 SAveFile_EnemyPosition { get; set; }
+
+        public Vector2 Map_Gen_savFile { get; set; }
+    }
+ 
+    public static void Deserialization_SF()
+    {
+        string JsonString = File.ReadAllText("JsonSaveFile.Json"); 
+        string BaseFolder = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
+        string path_BF = Path.Combine(BaseFolder, "JsonSaveFile.Json");
+        string JsonRead = File.ReadAllText(path_BF);
+        
+        JsonSaveFile data = JsonSerializer.Deserialize<JsonSaveFile>(JsonRead) ?? new JsonSaveFile();
+
+    }
+
+
+}
+

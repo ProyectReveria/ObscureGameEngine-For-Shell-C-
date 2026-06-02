@@ -21,6 +21,7 @@ public class PlayerStadistics
 {
     
     public Health Health {get; set;}
+    public Position Position  {get; set;}
 
 }
 
@@ -29,6 +30,14 @@ public class Health
     public string? Small_Text {get; set;}
     public int Value {get; set;}
 }
+
+public class Position
+{
+    public float Player_Position_X {get; set;}
+    public float Position_Y {get; set;}
+}
+
+
 
 public class IA_Stadistics
 {
