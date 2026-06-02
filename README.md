@@ -1,4 +1,7 @@
-Datos de Version: 2.0.0.:3.>:3 
+Datos de Version: 2.5.0.:3.>:3
+
+**Advertencia**
+Solo hay soporte para Windows, para poder activar o programar el soporte para MACos (unix) o una Distro de Linux ocupa re programar los DLL y los detectores de la consola (o usar un sistema de deteccion por cordenadas)
 
 Version de sistema de deteccion de errores: 0.3.0 (Magnus[ :3 ])
 
