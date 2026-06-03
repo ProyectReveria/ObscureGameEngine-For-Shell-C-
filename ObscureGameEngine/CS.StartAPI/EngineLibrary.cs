@@ -45,4 +45,10 @@ public class Engine_Special_Names
         _DeltaTime_.RunDeltaTime(); 
     }
 
+    public static dynamic DynamicTypeConvertion(dynamic data)
+    {
+        dynamic convert = data; 
+        return convert;
+    }
+
 }
