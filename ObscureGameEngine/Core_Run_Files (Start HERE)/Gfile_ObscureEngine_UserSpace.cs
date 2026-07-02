@@ -17,6 +17,7 @@ using System.Runtime.Serialization;
 //Save File (De nada se que siempre se ocupa)
 using ObscureEngine.SaveFile;
 using System.Security.Cryptography.X509Certificates;
+using ObscureEngine.EngineSystemCore.MainExecute;
 using ObscureEngine.AnIa;
 
 ///<summary>///
@@ -48,22 +49,17 @@ class ObscureEngine_Main : GameManager_OperativeBehavior
         public static float Update_Frame = 60; 
         public static float Status_update = 0; 
     }
-    public static bool GameActive = GameManager_OperativeBehavior.Game_Active; 
-    
-    
+    public static bool GameActive = GameManager_OperativeBehavior.Game_Active;
 
-    public static void Main(string[] args){
-        Vector2 IAposiution = new Vector2();
-        __Ia.IA_Movement(IAposiution);
+    public static void Engine_Process_Line()
+    {
         
-
-
-
-        //!Game Active: 
-
-
     }
 
+    public static void Engine_Process_Frame()
+    {
+        
+    }
 
 
 }

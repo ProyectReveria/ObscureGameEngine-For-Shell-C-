@@ -24,7 +24,9 @@ public static class GameBeheivorData
     public static int Delta_Time_Speed = 1; 
 
     //playerStats
-    public static int JumpForce = 2; 
+    public static int JumpForce = 2;
+
+    public static int Musical_Thread = 100; 
 }
 
 
