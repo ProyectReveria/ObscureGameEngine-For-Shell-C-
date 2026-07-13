@@ -37,9 +37,14 @@ Requirimientos
 
 Min
 
-- 2 gb Ram ddr3
-- 500 mb de espacio libre ssd
--Intel core i3
--Sin tarjeta grafica
--Kernel: Win32 o Win64
+2 gb Ram ddr3
+
+500 mb de espacio libre ssd
+
+Intel core i3
+
+Sin tarjeta grafica
+
+Kernel: Win32 o Win64
+
 
