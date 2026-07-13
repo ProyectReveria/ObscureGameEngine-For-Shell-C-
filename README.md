@@ -31,3 +31,14 @@ Esta pensada para sostener los procesos en C#, no hace falta realmente usar c++,
 (6) si ves a "Marcus" o "Ferguson" son mis dos clases de handle Error, si les di nombre y si uno es un enojon el otro no. que no te sorprensa los uso para burlarme de la gente no revisa el codigo antes y usualmente solo sirven para dar alertas de cosas no deberias hacer.
 
 Referencia para Caracteres en sistema ASCII en uso de Datos Char: https://www.w3.org/Style/XSL/TestSuite/results/4/XEP/charsets.pdf
+
+
+Requirimientos 
+
+Min
+
+- 2 gb Ram ddr3 
+-500 mb de espacio libre ssd
+-Intel core i3
+-Sin tarjeta grafica
+Kernel: Win32 o Win64
