@@ -1,6 +1,7 @@
 using System; 
 using  ObscureEngine.DeltaTime; 
 namespace ObscureEngine.Game_Manager;
+using ObscureEngine._Declare__Library; 
 
 /// <manger>
 /// te presento al todo poderoso, señor de todos nosotros, sumo pontifise de la catedral de marcus, gran dios y slvador de todos nosotors juanito el manger.
@@ -12,6 +13,7 @@ namespace ObscureEngine.Game_Manager;
 
 public static class GameBeheivorData
 {
+    public static string? EngineEnviormentVariable = null; 
     public static bool Sincron = true;
     public static bool Asincron = false;
 

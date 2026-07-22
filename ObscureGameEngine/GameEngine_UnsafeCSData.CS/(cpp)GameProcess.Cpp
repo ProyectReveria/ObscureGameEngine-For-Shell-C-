@@ -15,7 +15,7 @@ float  GlobalEngineSpeed = 0.0f;
 extern "C"{
 
 
-    __declspec(dllexport) void ExecuteProcess(int* stackData, int stackSize, float EngineSpeed){
+    __declspec(dllexport) void ExecuteProcess(int* stackData, int stackSize, float EngineSpeed){ //32 bit Stack / 2 nucleum  520 Vram; Windows Win32 kernel
 
         GlobalEngineSpeed = EngineSpeed; 
         for (int i = 0; i < stackSize; i++){
