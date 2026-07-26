@@ -6,7 +6,7 @@
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <StartupObject>ObscureEngine.ObscureEngine_Main</StartupObject>
+    <StartupObject>ObscureEngine.EngineSystemCore.MainExecute.Main_Data</StartupObject>
   </PropertyGroup>
 
   <ItemGroup>
