@@ -1,6 +1,22 @@
 ﻿namespace ObscureEngine._Declare__Library;
 using ObscureEngine.Game_Manager;
 
+public static class @Service_Variables_Serialize_Enviormnet_Variables
+{
+    public static _Declaration_Enviorment_variables @Service_Variables_Serialize_Contract(String? enviorment)
+    {
+        return enviorment switch
+        {
+            "informal" => new _Declaration_Enviorment_variables("informal"),
+            "Iprivate" => new _Declaration_Enviorment_variables("Iprivate"),
+            "Ipublic" => new _Declaration_Enviorment_variables( "Ipublic"),
+            "onRun" => new _Declaration_Enviorment_variables( "onRun"),
+            _ => throw new NotImplementedException(
+                "[Diana]:Null Reference on Enviorment variable is not implement has {Null} and result on {Null Assigment on Struct}"),
+        }; 
+    }
+}
+
 public struct _Declaration_Enviorment_variables
 {
 
@@ -28,29 +44,12 @@ public struct _Declaration_Enviorment_variables
     public _Declaration_Enviorment_variables GameManager_Evariable(string enviorment)
     {
         dynamic? gameData_Enviorment; 
-        switch (enviorment)
-        {
-            case "informal":
-                return gameData_Enviorment = informal;
-                break; 
-            case "Iprivate":
-                return gameData_Enviorment = Iprivate;
-                break; 
-            case "Ipublic":
-                return gameData_Enviorment = Ipublic;
-                break; 
-            case "onRun":
-                return gameData_Enviorment = onRun;
-                break; 
-            default:
-                Console.WriteLine("Null reference");
-                return gameData_Enviorment = null; 
-        }
-
-
-        return gameData_Enviorment ; 
+        
+        return @Service_Variables_Serialize_Enviormnet_Variables.Service_Variables_Serialize_Contract(enviorment);
     }
 }
+
+
 
 
 
@@ -74,6 +73,16 @@ class _Determinate_Porperty
         }
         
         
+    }
+}
+
+class _Enviorment_Behaivior_
+{
+    private string? protocol = null; 
+    public object @_EnviormentBehaivior_Protocol(_Declaration_Enviorment_variables evariable)
+    {
+        
+        return evariable; 
     }
 }
 
