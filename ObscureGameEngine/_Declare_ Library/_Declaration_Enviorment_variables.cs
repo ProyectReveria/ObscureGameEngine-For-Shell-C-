@@ -1,5 +1,6 @@
 ﻿namespace ObscureEngine._Declare__Library;
 using ObscureEngine.Game_Manager;
+//< Recordar continuar esto para poder declarar estancias dentro del engine main> 
 
 public static class @Service_Variables_Serialize_Enviormnet_Variables
 {
@@ -75,14 +76,3 @@ class _Determinate_Porperty
         
     }
 }
-
-class _Enviorment_Behaivior_
-{
-    private string? protocol = null; 
-    public object @_EnviormentBehaivior_Protocol(_Declaration_Enviorment_variables evariable)
-    {
-        
-        return evariable; 
-    }
-}
-
