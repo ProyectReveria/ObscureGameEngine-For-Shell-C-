@@ -52,7 +52,7 @@ Notas Importantes
 
 -> En caso de usarse linux el Kernel de ObscureEngine no esta diseñado con Linux 7.1x en mente, de hecho esta pensado con Win32 en mente por tanto requiere hacer una consola gustom.
 
-->Si se quiere agregar openGL o Vulkan estos son los requerimientos unviersales:
+->Si se quiere agregar openGL o Vulkan estos son los requerimientos Universales:
 
        [OpenGL Universal]
        Kernel | NT.10 o Linux 7.1x 
