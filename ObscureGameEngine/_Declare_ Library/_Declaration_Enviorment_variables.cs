@@ -8,6 +8,7 @@ public static class @Service_Variables_Serialize_Enviormnet_Variables
     {
         return enviorment switch
         {
+            "Declarete"  => new _Declaration_Enviorment_variables("Declarete"),
             "informal" => new _Declaration_Enviorment_variables("informal"),
             "Iprivate" => new _Declaration_Enviorment_variables("Iprivate"),
             "Ipublic" => new _Declaration_Enviorment_variables( "Ipublic"),
