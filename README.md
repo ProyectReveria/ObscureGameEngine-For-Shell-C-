@@ -35,16 +35,28 @@ Referencia para Caracteres en sistema ASCII en uso de Datos Char: https://www.w3
 
 Requirimientos 
 
-Min
+       [Minimo]
+       Kernel | Win 16
+       Ram    | 2GB DDR3
+       Procesador| Intel Core i3 10010F 
+       Sistema operativo de 16 bits 
+       Sin Tarjeta Grafica
+       [Recomendado]
+       Kernel | NT.10 o Linux 7.1x 
+       Ram    | 8 GB DDR4
+       Procesador| Intel Core i5 14400 o Ryzen 5 8600F
+       Sistema operativo de 64 bits 
+       Sin tarjeta grafica 
 
-2 gb Ram ddr3
+Notas Importantes
 
-500 mb de espacio libre ssd
+-> En caso de usarse linux el Kernel de ObscureEngine no esta diseñado con Linux 7.1x en mente, de hecho esta pensado con Win32 en mente por tanto requiere hacer una consola gustom.
 
-Intel core i3
+->Si se quiere agregar openGL o Vulkan estos son los requerimientos unviersales:
 
-Sin tarjeta grafica
-
-Kernel: Win32 o Win64
-
-
+       [OpenGL Universal]
+       Kernel | NT.10 o Linux 7.1x 
+       Ram    | 32 GB DDR4
+       Procesador| Intel Core i7 12700F o Ryzen 7 5800x
+       Sistema operativo de 64 bits 
+       Nvidia RTX 2060 | Radeon RX 5600 XT
