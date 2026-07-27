@@ -43,3 +43,11 @@ C:\Users\gamer\RiderProjects\Obscure_Game_Engine_2.0__for_Shell\ObscureGameEngin
 C:\Users\gamer\RiderProjects\Obscure_Game_Engine_2.0__for_Shell\ObscureGameEngine\obj\Debug\net8.0\ObscureGameEngine.pdb
 C:\Users\gamer\RiderProjects\Obscure_Game_Engine_2.0__for_Shell\ObscureGameEngine\obj\Debug\net8.0\ObscureGameEngine.genruntimeconfig.cache
 C:\Users\gamer\RiderProjects\Obscure_Game_Engine_2.0__for_Shell\ObscureGameEngine\obj\Debug\net8.0\ref\ObscureGameEngine.dll
+C:\Users\gamer\RiderProjects\Obscure_Game_Engine_2.0__for_Shell\ObscureGameEngine\bin\Debug\net8.0\NAudio.dll
+C:\Users\gamer\RiderProjects\Obscure_Game_Engine_2.0__for_Shell\ObscureGameEngine\bin\Debug\net8.0\NAudio.Asio.dll
+C:\Users\gamer\RiderProjects\Obscure_Game_Engine_2.0__for_Shell\ObscureGameEngine\bin\Debug\net8.0\NAudio.Core.dll
+C:\Users\gamer\RiderProjects\Obscure_Game_Engine_2.0__for_Shell\ObscureGameEngine\bin\Debug\net8.0\NAudio.Midi.dll
+C:\Users\gamer\RiderProjects\Obscure_Game_Engine_2.0__for_Shell\ObscureGameEngine\bin\Debug\net8.0\NAudio.Wasapi.dll
+C:\Users\gamer\RiderProjects\Obscure_Game_Engine_2.0__for_Shell\ObscureGameEngine\bin\Debug\net8.0\NAudio.WinMM.dll
+C:\Users\gamer\RiderProjects\Obscure_Game_Engine_2.0__for_Shell\ObscureGameEngine\obj\Debug\net8.0\ObscureGameEngine.csproj.AssemblyReference.cache
+C:\Users\gamer\RiderProjects\Obscure_Game_Engine_2.0__for_Shell\ObscureGameEngine\obj\Debug\net8.0\ObscureG.F249ADCA.Up2Date
