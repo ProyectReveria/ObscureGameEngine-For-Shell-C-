@@ -1,11 +1,13 @@
-Datos de Version: 2.5.0.:3.>:3
+Datos de Version: 2.8.0.:3.>:3 
 
 **Advertencia**
 Solo hay soporte para Windows, para poder activar o programar el soporte para MACos (unix) o una Distro de Linux ocupa re programar los DLL y los detectores de la consola (o usar un sistema de deteccion por cordenadas)
 
-Version de sistema de deteccion de errores: 0.3.0 (Magnus[ :3 ])
+Version de sistema de deteccion de errores: 0.7.0 (Magnus[ :3 ])
 
-Sistema de ayuda para el arreglo de errores: 0.1.0 (Ferguson [ >:3 ]) 
+Sistema de ayuda para el arreglo de errores: 0.5.0 (Ferguson [ >:3 ]) 
+
+Obscure engine Kernel: 1.3.0.Repair (Diana) 
 
 Engine CPP implementation version: 1.0 
 Engine Map Gen 1.0 
@@ -30,7 +32,12 @@ Esta pensada para sostener los procesos en C#, no hace falta realmente usar c++,
 
 (6) si ves a "Marcus" o "Ferguson" son mis dos clases de handle Error, si les di nombre y si uno es un enojon el otro no. que no te sorprensa los uso para burlarme de la gente no revisa el codigo antes y usualmente solo sirven para dar alertas de cosas no deberias hacer.
 
+
+
+
 Referencia para Caracteres en sistema ASCII en uso de Datos Char: https://www.w3.org/Style/XSL/TestSuite/results/4/XEP/charsets.pdf
+
+
 
 
 Requirimientos 
