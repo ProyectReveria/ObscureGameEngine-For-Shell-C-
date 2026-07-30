@@ -70,77 +70,112 @@ public unsafe class Physics_Render_Unsafe
 
 public static class @Service_Physics
 {
-    public static async Task  CalculatePhysics_jump(float timer, float force, Vector2 playerP, Vector2 floor)
+    private static bool onUp = false;
+
+    public static void Physics_Gravity(float gravity, ref Vector2 playerP, Vector2 floor_Y, float tiempo, float delta)
     {
-        float varianza = force * timer; 
-        int Repetition = 0;
-        int Count = 0; 
-        Vector2 origin = playerP;
-        for (int i = 0; i < varianza; ++i)
+
+        int Delta_int = (int)(delta * 1000f);
+        if (Delta_int <= 1)
+            Delta_int = 1;
+
+        //Digase que Tiempo es lo que dure el salto o el movimiento en si; 
+        if (playerP.Y > floor_Y.Y)
         {
-            
-            if (Count == timer)
+            _Physics_.Velocidad_Inicial(Game_Physics.Gravity_OnEngine, Game_Physics.aceleration, tiempo);
+            if (onUp == true)
             {
-                Repetition = 1; 
-            }
-            
-            if (Repetition == 0)
-            {
-                playerP.Y = playerP.Y + varianza * Math_Alogirth.Get_Sin(varianza);
-                Count++;
-            }else if (Repetition == 1)
-            {
-                playerP.Y = playerP.Y - varianza * Math_Alogirth.Get_Sin(varianza);
-                Count++;
-                if (playerP.Y == origin.Y)
+                ///<Calculo en mi jupa que probablementen o ande>
+                ///  [0,0] => [1...X+1,0]
+                ///  [Y,X] => [Y,X] 
+                /// 
+                ///  
+                /// <end>
+                for (int i = 0; i < tiempo; ++i)
                 {
-                    break; 
+                    Thread.Sleep(Delta_int);
+                    ++playerP.Y;
+                }
+            }
+            else if (onUp == false)
+            {
+                for (int i = 0; i > tiempo; --i)
+                {
+                    Thread.Sleep(Delta_int);
+                    --playerP.Y;
                 }
             }
         }
-    }
-}
 
-public static class Physics_Rendering_Internal
-{
-    private static _Declaration_Enviorment_variables Physics_Enviorment_variables;
-    private static string? referencial_Enviorment; 
-    public static void PhysicsStart(double? delta, Vector2? floor, Vector2? Playerposition, bool? vertical_Axis, bool IfPrivate)
+
+    }
+
+    public static void CalculatePhysics_jump(float timer, float force, ref Vector2 playerP, Vector2 floor)
     {
+        //Hacer que el jugador pueda decidir donde caer en ves de en el punto de partida. 
+        Vector2 origin_point = playerP;
+        int Ttimer = (int)(timer * 1000f);
 
-
-        if (delta != null && floor != null && Playerposition != null && vertical_Axis == true)
+        for (int i = 0; i < Ttimer; ++i)
         {
-            
-            if (IfPrivate == true)
-            {
-                Physics_Enviorment_variables = new _Declaration_Enviorment_variables("Iprivate");
-            } else 
+            float varianza = ((float)i / timer) * AlgebraicVariables.pi;
 
-            {
-                Physics_Enviorment_variables = new _Declaration_Enviorment_variables("Ipublic");
-            }
-            
-            
-        }else if (delta != null && floor != null && Playerposition != null && vertical_Axis == false)
-        {
-            Physics_Enviorment_variables = new _Declaration_Enviorment_variables("informal"); 
+            onUp = (i < Ttimer / 2);
+
+            playerP.Y = origin_point.Y - (force * Math_Alogirth.Get_Sin(varianza));
         }
-        referencial_Enviorment = Physics_Enviorment_variables.Get_Declare_Property();
 
-        if (referencial_Enviorment != null && referencial_Enviorment != "informal")
+        playerP.Y = origin_point.Y;
+    }
+
+    public static class Physics_Rendering_Internal
+    {
+        private static _Declaration_Enviorment_variables Physics_Enviorment_variables;
+        private static string? referencial_Enviorment;
+
+        public static void PhysicsStart(double? delta, Vector2? floor, Vector2? Playerposition, bool? vertical_Axis,
+            bool IfPrivate)
         {
-            if (referencial_Enviorment == "Iprivate")
+
+
+            if (delta != null && floor != null && Playerposition != null && vertical_Axis == true)
             {
-                
-            }else if (referencial_Enviorment == "Ipublic")
-            {
-                
+
+                if (IfPrivate == true)
+                {
+                    Physics_Enviorment_variables = new _Declaration_Enviorment_variables("Iprivate");
+                }
+                else
+
+                {
+                    Physics_Enviorment_variables = new _Declaration_Enviorment_variables("Ipublic");
+                }
+
+
             }
+            else if (delta != null && floor != null && Playerposition != null && vertical_Axis == false)
+            {
+                Physics_Enviorment_variables = new _Declaration_Enviorment_variables("informal");
+            }
+
+            referencial_Enviorment = Physics_Enviorment_variables.Get_Declare_Property();
+
+            if (referencial_Enviorment != null && referencial_Enviorment != "informal")
+            {
+                if (referencial_Enviorment == "Iprivate")
+                {
+
+                }
+                else if (referencial_Enviorment == "Ipublic")
+                {
+
+                }
+            }
+
+
+
+
         }
-        
-
-        
-
     }
 }
+

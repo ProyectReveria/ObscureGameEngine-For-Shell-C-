@@ -5,6 +5,14 @@ using System.Numerics;
         //Am... se llama jorge y hace lo que dice abajo de este comentario
 namespace ObscureEngine.Mathematics
 {
+    public static class AlgebraicVariables
+    {
+        #region algebra
+
+        public static float pi = 3.14f; 
+
+        #endregion
+    }
     internal class Math_Alogirth
     {
         public static Random RNG = new Random();

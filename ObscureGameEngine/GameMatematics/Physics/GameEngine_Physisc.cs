@@ -7,12 +7,13 @@ using System.Numerics;
 namespace ObscureEngine.Physics; 
 class _Physics_  : Mathematics.Math_Alogirth 
 {
-    class Universal_Constants
+    public class Universal_Constants
     {
         #region  Physics universal Variables
-        public float Universal_Gravity_Constant = 6.674e-11f; 
-        public float Earth_Gravity = 9.81f;
+        public static float Universal_Gravity_Constant = 6.674e-11f; 
+        public static float Earth_Gravity = 9.81f;
         #endregion 
+        
     }
     
     public static float Gravity_Const_Aceleration_G( float universal_Gravity_Constant, float Stelar_Entity_Masa, float Stelar_entity_Radio)
@@ -22,6 +23,12 @@ class _Physics_  : Mathematics.Math_Alogirth
     }
 
     public static float Newton_Str(float masa, float Gravity_Aceleration) => masa * Gravity_Aceleration; 
-    public static Vector2 Newton_Aceleration(Vector2 Position_i, Vector2 position_K, float Tiempo) => (Position_i - position_K)/ Tiempo; 
+    public static Vector2 Newton_Aceleration(Vector2 Position_i, Vector2 position_K, float Tiempo) => (Position_i - position_K)/ Tiempo;
+
+    public static float Velocidad_Inicial(float Vf, float a, float t) => Vf - a * t;
+    public static float Velocidad_Final(float gravity, float tiempo) => gravity * tiempo; 
+    
+    public static float tiempo (float h, float gravity) => ((float)Math.Sqrt(h * h - gravity ));
+
 
 }

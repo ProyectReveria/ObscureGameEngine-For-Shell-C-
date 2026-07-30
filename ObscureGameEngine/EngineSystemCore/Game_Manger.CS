@@ -1,5 +1,7 @@
 using System; 
-using  ObscureEngine.DeltaTime; 
+using  ObscureEngine.DeltaTime;
+using ObscureEngine.Physics;
+
 namespace ObscureEngine.Game_Manager;
 using ObscureEngine._Declare__Library; 
 
@@ -59,6 +61,13 @@ public class Game_FrameUpdate
             await Task.Delay(1000);
         }
     }
+}
+
+public class Game_Physics
+{
+    public static float aceleration = 1;
+    public static float jump_Time = 0;
+    public static float Gravity_OnEngine = _Physics_.Universal_Constants.Earth_Gravity; 
 }
 
 
