@@ -5,8 +5,8 @@ public class Main_Data
 {
     public static void Main(string[] args){
         
-        ObscureEngine_Main.Engine_Process_Line();
-        ObscureEngine_Main.Engine_Process_Frame(); 
+        ObscureEngine_Main.Engine_Process_Line(); //on update
+        ObscureEngine_Main.Engine_Process_Frame();  //on run
 
 
         //!Game Active: 

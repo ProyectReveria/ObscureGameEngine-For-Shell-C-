@@ -2,6 +2,7 @@ using System;
 using System.Diagnostics.Metrics;
 using System.Numerics;
 using ObscureEngine._Declare__Library;
+using ObscureEngine.API.HerrorHandler;
 using ObscureEngine.Physics; 
 using ObscureEngine.Game_Manager; 
 using ObscureEngine.DeltaTime; 
@@ -12,19 +13,56 @@ using ObscureEngine.Treading.Delta;
 
 public unsafe class Physics_Render_Unsafe
 {
+    public static _Declaration_Enviorment_variables Get_Set_Declaration = new _Declaration_Enviorment_variables("undeclarate"); 
+    public static string? Get_Referencial_Enviorment = Get_Set_Declaration.Get_Declare_Property();
+    public static int errorcounter; 
     public static async Task PhysicsStart()
     {
-        Physics_Kernel.Physics_Delta();
+        try
+        {
+            Physics_Kernel.Physics_Delta();
 
-        if (  Physics_Kernel.Timer_Elapsed != 0)
-        {
-            
+            Get_Set_Declaration = new _Declaration_Enviorment_variables("Declarete");
+            if (Physics_Kernel.Timer_Elapsed != 0)
+            {
+                Get_Set_Declaration = new _Declaration_Enviorment_variables("onRun");
+            }
+            else
+            {
+                Physics_Kernel.Timer.Start();
+                ++errorcounter;
+                Get_Set_Declaration = new _Declaration_Enviorment_variables("_errorProces");
+                 Thread.Sleep(20); 
+                PhysicsStart();
+                if (errorcounter == 10)
+                {
+                    throw new ArgumentException(nameof(errorcounter), ILoveCorrectPeapol.Physics_2); 
+                }
+            }
+
+            Get_Set_Declaration = new _Declaration_Enviorment_variables("informal");
+
         }
-        else
+        catch (Exception @ServiceEnviormentVariable_PhysicsErrorCatch)
         {
-            Physics_Kernel.Timer.Start();
-            PhysicsStart(); 
+            if (Get_Referencial_Enviorment == "_ErrorProces")
+            {
+                Console.WriteLine(ILoveCorrectPeapol.Physics_1);
+            }
         }
+        finally
+        {
+            Console.WriteLine("Physics start and compile until end");
+            Get_Set_Declaration = new _Declaration_Enviorment_variables("undeclarate");
+        }
+    }
+
+    public static async Task PhysicsStops()
+    {
+        Physics_Kernel.Timer.Stop(); 
+        Get_Set_Declaration = new _Declaration_Enviorment_variables("_ErrorProces");
+        
+        
     }
 
 }

@@ -21,18 +21,22 @@ class ILoveCorrectPeapol // >:3
 
     
     //Serialization
-    public static String Seralization_1 = "Serialziation [1] [>:3]: el save file no se creo correctamente"; 
+    public static String Seralization_1 = "Serialziation [1] : [>:3]: el save file no se creo correctamente"; 
 
     //Special Commands
 
-    public static String  Curontine_1 = "Curontine[1] [:3]: La duracion o la cantidad de siclos son iguales a 0 o nulas ";
+    public static String  Curontine_1 = "Curontine[1] : [:3]: La duracion o la cantidad de siclos son iguales a 0 o nulas ";
 
     //Kernel
 
-    public static string Kernel_1 = "Kernel[!1!] = GPU cicles can't run on C# if Game is not Active in the proper variable"; 
+    public static string Kernel_1 = "Kernel[!1!] : GPU cicles can't run on C# if Game is not Active in the proper variable";
+
+    public static string Physics_1 = "Physics[kernelLevel.Diana] : Physics fail on execution enviorment or can't compile";
+
+    public static string Physics_2 = "Physics[kernelLevel.Diana] : Engine is not turn on the Delta Time or Delta Time is not the Kernel Level Counter";
 
 
-    
+
 }
 
 class ILoveHandlingErrors // :3

@@ -8,6 +8,8 @@ public static class @Service_Variables_Serialize_Enviormnet_Variables
     {
         return enviorment switch
         {
+            "_ErrorProces"  => new _Declaration_Enviorment_variables( "_ErrorProces"),
+            "undeclarate"  => new _Declaration_Enviorment_variables("undeclarate"),
             "Declarete"  => new _Declaration_Enviorment_variables("Declarete"),
             "informal" => new _Declaration_Enviorment_variables("informal"),
             "Iprivate" => new _Declaration_Enviorment_variables("Iprivate"),
@@ -25,6 +27,8 @@ public struct _Declaration_Enviorment_variables
     private String _Declare_Property;
     
     //Enviorment Data Type  
+    private string? _ErrorProces; 
+    private string? undeclarate; 
     private string? Declarete;
     private string? informal;
     private string? Iprivate;
