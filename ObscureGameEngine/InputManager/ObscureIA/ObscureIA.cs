@@ -71,7 +71,7 @@ class __Ia
                     --position.Y;
                 }else if (movement >= 0)
                 {
-                    ++position.Y;
+                    ++position.Y; 
                 }
             }
         }
