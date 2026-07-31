@@ -1,3 +1,5 @@
+using ObscureEngine.InputManager;
+
 namespace ObscureEngine.Threading_Physics_Render; 
 using System;
 using System.Diagnostics.Metrics;
@@ -72,10 +74,14 @@ public static class @Service_Physics
 {
     private static bool onUp = false;
 
+    public static  _Declaration_Enviorment_variables BooleanEnviorment = new _Declaration_Enviorment_variables("Ipublic"); 
+    public static float X_SumPressTime =  0.11f * ControlMangaer.PressTime ; 
+
     public static void Physics_Gravity(float gravity, ref Vector2 playerP, Vector2 floor_Y, float tiempo, float delta)
     {
 
         int Delta_int = (int)(delta * 1000f);
+        
         if (Delta_int <= 1)
             Delta_int = 1;
 
@@ -101,11 +107,16 @@ public static class @Service_Physics
             {
                 for (int i = 0; i > tiempo; --i)
                 {
+                    
                     Thread.Sleep(Delta_int);
                     --playerP.Y;
                 }
             }
         }
+        
+        /// PlayerPpsition X = X + (PressTime * 0.1f)
+        /// [y, X + (PRessTime * 0.1)] 
+        /// invertido para la izquierda (<) 
 
 
     }
@@ -125,7 +136,9 @@ public static class @Service_Physics
             playerP.Y = origin_point.Y - (force * Math_Alogirth.Get_Sin(varianza));
         }
 
-        playerP.Y = origin_point.Y;
+        playerP.Y = origin_point.Y + X_SumPressTime;
+        playerP.X = origin_point.X + X_SumPressTime;
+        ControlMangaer.PressTime = 0; 
     }
 
     public static class Physics_Rendering_Internal

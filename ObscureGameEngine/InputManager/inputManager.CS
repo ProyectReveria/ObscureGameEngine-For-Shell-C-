@@ -23,6 +23,7 @@ namespace ObscureEngine.InputManager
     
     class ControlMangaer : Screen_Render_Sceen_Hitbox
     {
+        public static float PressTime = 0; 
         public static string command = " "; 
         public static int Px , Py ;
         public static int Px_old, Py_old;
